@@ -1,0 +1,155 @@
+/* KANBOARD PLUGIN - AUTOMATICACTIONUX CSS FILE */
+
+:root {
+    --pp-blue: #007AC9;
+    --pp-blue-alt: #00ADFF;
+    --pp-red: #B71234;
+    --pp-red-alt: #DA004C;
+    --pp-red-alt-2: #AE003D;
+    --pp-black: #000000;
+    --pp-grey: #4D4D4D;
+    --pp-white: #FFFFFF;
+    --pp-green: #2EA02E;
+    --pp-orange: #FF6500;
+    --red-icon-faded: #b71234a1;
+    --border-radius: 3px;
+    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-border-gradient-match: #476E9E;
+    --content-margin: auto 20px auto 20px;
+    --link-hover-red: #AE003D;
+    --link-hover-white: #EEEEEE;
+    --background-hover: rgba(174, 0, 61, 0.5);
+    --header-page-margin: 5px 15px 10px 15px;
+    --pp-blue-box: rgba(0, 122, 201, 0.6);
+    --all-yellow-box: rgba(223, 255, 0, 0.6);
+    --box-shadow: 1px 1px 1px 0px #000;
+}
+
+.page #main section #ActionPageHeader {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#ActionPageHeader h2 {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.action-page-count {
+    border: 2px outset var(--button-blue-border-gradient-match);
+    text-align: center;
+    padding: 2px 0px 2px 6px !important;
+    border-radius: var(--border-radius);
+    margin-right: 15px;
+    cursor: context-menu;
+}
+
+#ActionTable {
+    border-collapse: collapse;
+}
+
+#ActionTable > tbody {
+    border: 2px outset var(--button-blue-border-gradient-match);
+}
+
+.cell-bg {
+    background-color: var(--alert-background-color-info);
+}
+
+.cell-bg-title {
+    background-color: var(--color-lighter);
+}
+
+#ActionTable > thead {
+    border: 2px outset var(--button-blue-border-gradient-match);
+    border-bottom: 0;
+}
+
+#ActionTable > tbody > tr > th, #ActionTable > tbody > tr > td, #ActionTable > thead > tr > th {
+    border: 1px solid var(--button-blue-border-gradient-match);
+    border-bottom: 0;
+}
+
+#ActionTable > tbody > tr > th:not(:first-child), #ActionTable > tbody > tr > td:not(:first-child), #ActionTable > thead > tr > th:not(:first-child), #ActionTable > thead > tr > td:not(:first-child) {
+    border-left: 0;
+}
+
+#ActionTable thead > tr > th, #ActionTable > tbody > tr > td, #ActinTable > tbody > tr > th {
+    padding-left: 3px;
+}
+
+#ActionTable > tbody > tr > th:first-child, #ActionTable > thead > tr > th:first-child {
+    border-top-left-radius: var(--border-radius);
+}
+
+.line-no, .action-id {
+    vertical-align: middle;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.action-activity {
+    vertical-align: middle;
+    text-align: center;
+    color: var(--pp-grey);
+    position: relative;
+}
+
+.action-activity-icon {
+    font-size: 2em;
+}
+
+.action-activity-text {
+    font-size: small;
+    text-transform: uppercase;
+}
+.action-action {
+    vertical-align: middle;
+    text-align: center;
+    color: var(--pp-grey);
+    position: relative;
+}
+
+.action-action-icon {
+    font-size: 2em;
+}
+
+.action-action-text {
+    font-size: small;
+    text-transform: uppercase;
+}
+
+
+.action-relation {
+    vertical-align: middle;
+    font-size: 2em;
+    text-align: center;
+    color: var(--pp-grey);
+}
+
+.action-trigger {
+    vertical-align: middle;
+    font-size: 2em;
+    text-align: center;
+    color: var(--pp-grey);
+}
+
+.action-alert {}
+
+.action-table {}
+
+.action-table-row {}
+
+.action-table-column-title {}
+
+.float-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.action-dropdown:hover {
+    color: var(--pp-red-alt-2) !important;
+}
