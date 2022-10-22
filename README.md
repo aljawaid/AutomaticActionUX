@@ -1,4 +1,5 @@
-# KanboardEmailHistory
+# AutomaticActionUX
+Change the Automatic Action interface to make it more user friendly when viewing
 
 Automatic Action Plugin for Kanboard
 ==========================
@@ -16,7 +17,7 @@ Main Features
 
 Screenshot
 ----------
-![Screenshot](../screenshot.png "Current Version")
+![Screenshot](../master/screenshot.png "Current Version")
 
 
 Translations
@@ -34,7 +35,7 @@ Compatibility
 Changelog
 ---------
 
-[**Full Changelog**](../changelog.md "See changes")
+[**Full Changelog**](../master/changelog.md "See changes")
  
 
 Installation
@@ -50,7 +51,7 @@ Installation
 Note: Plugin folder is case-sensitive.
 
 **_or_**
-- git clone (_or ftp upload_) and extract the zip into this folder: `.\plugins\KanboardEmailHistory\` (must be exact case)
+- git clone (_or ftp upload_) and extract the zip into this folder: `.\plugins\AutomaticActionUX\` (must be exact case)
 
 
 Authors & Contributors
@@ -61,4 +62,4 @@ Authors & Contributors
 
 License
 -------
-- This project is distributed under [The Unlicense](../main/LICENSE "Read The Unlicense")
+- This project is distributed under [The Unlicense](../master/LICENSE "Read The Unlicense")
