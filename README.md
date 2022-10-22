@@ -28,7 +28,7 @@ Screenshot
 Translations
 ------------
 
-- English (UK), French, German
+- English (UK)
 
 
 Compatibility
@@ -62,7 +62,7 @@ Note: Plugin folder is case-sensitive.
 Authors & Contributors
 ----------------------
 
-- Aljawaid
+- @aljawaid - Author
 
 
 License
