@@ -4,7 +4,7 @@ Change the Automatic Action interface to make it more user friendly when viewing
 Automatic Action Plugin for Kanboard
 ==========================
 
-This plugin changes the Automatic Action interface to make it more user friendly when viewing.
+This plugin changes the Automatic Action interface to make it more user friendly when viewing. This is particularly useful for visual learners and non-English speaking users.
 
 Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban project management software")
 

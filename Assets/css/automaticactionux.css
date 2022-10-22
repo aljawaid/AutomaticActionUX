@@ -15,13 +15,9 @@
     --border-radius: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --button-blue-border-gradient-match: #476E9E;
-    --content-margin: auto 20px auto 20px;
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
-    --background-hover: rgba(174, 0, 61, 0.5);
-    --header-page-margin: 5px 15px 10px 15px;
     --pp-blue-box: rgba(0, 122, 201, 0.6);
-    --all-yellow-box: rgba(223, 255, 0, 0.6);
     --box-shadow: 1px 1px 1px 0px #000;
 }
 
@@ -151,5 +147,5 @@
 }
 
 .action-dropdown:hover {
-    color: var(--pp-red-alt-2) !important;
+    color: var(--link-hover-red) !important;
 }
