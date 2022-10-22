@@ -12,7 +12,12 @@ Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban pr
 Main Features
 -------------
 
-`to be completed`
+- Simplified the Automatic Actions page in `Project Settings`
+- Added icons for better user experience
+- Display Action IDs
+- Converted existing core layout to a better table
+- Display total actions for the project
+- Identify difference between user-triggered and system-triggered actions
 
 
 Screenshot
