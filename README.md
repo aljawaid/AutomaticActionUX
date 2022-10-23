@@ -1,8 +1,7 @@
 # AutomaticActionUX
+===================
 
-
-Automatic Action Plugin for Kanboard
-==========================
+_Automatic Action Plugin for Kanboard_
 
 This plugin changes the Automatic Action interface to make it more user friendly when viewing. This is particularly useful for visual learners and non-English speaking users.
 
@@ -23,7 +22,11 @@ Features
 
 Screenshots
 ----------
+
+**Automatic Actions Listing Page**
 ![Screenshot](../master/screenshot.png "Automatic Actions Listing Page")
+
+**Board View**
 ![Screenshot](../master/screenshot-board.png "Board View")
 
 
