@@ -146,6 +146,47 @@
     text-align: center;
 }
 
-.action-dropdown:hover {
+.action-dropdown:hover, a.board-action-link:hover {
     color: var(--link-hover-red) !important;
+}
+
+#BoardActions {
+    display: inline-block;
+}
+
+#BoardActions .action-page-count {
+    border: 2px outset var(--button-blue-border-gradient-match);
+    text-align: center;
+    padding: 0px 1px 1px 3px !important;
+    margin-right: 3px;
+    display: inline;
+    border-radius: var(--border-radius);
+    cursor: context-menu;
+}
+
+#BoardActions .action-page-count:last-child {
+    padding-right: 4px !important;
+    margin-right: 5px;
+}
+
+.board-actions {}
+
+.board-action-link {}
+
+/* ******************* */
+/* FIX FOR KANBOARDCSS */
+ul#BoardViews li:first-of-type {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+}
+
+ul#BoardViews li:last-of-type {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+}
+/* END OF FIX */
+/* ******************* */
+
+.display-none {
+    display: none !important;
 }

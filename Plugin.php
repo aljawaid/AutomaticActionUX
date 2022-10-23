@@ -18,6 +18,9 @@ class Plugin extends Base
 
         	//css
         	$this->hook->on('template:layout:css', array('template' => 'plugins/AutomaticActionUX/Assets/css/automaticactionux.css'));
+
+        	//Board Views
+        	$this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'automaticActionUX:project_header/actions');
     		
 	}
 	
