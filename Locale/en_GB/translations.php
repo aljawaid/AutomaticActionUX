@@ -1,8 +1,9 @@
 <?php
 return array(
   'Automatic Actions for Project' => 'Automatic Actions',
-  'Actions for this project' => 'Actions for this project',
-  'User Triggered Actions' => 'UserTriggered Actions',
+  'Actions for this project' => 'Automatic Actions for this project',
+  'View all actions for this project' => 'View all associated actions for this project',
+  'User Triggered Actions' => 'User Triggered Actions',
   'System Triggered Actions' => 'System Triggered Actions',
   'Add a new action' => 'Add new action',
   'Import from another project' => 'Import from another project',
