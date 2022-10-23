@@ -23,8 +23,20 @@
         <li class="action-page-count" title="<?= t('User Triggered Actions')?>">
             <i class="fa fa-user" aria-hidden="true">&nbsp;</i> <?= $userTriggerCounterResult ?>
         </li>
+
+        <?php
+        $systemTriggerCounterZero = '0';
+        ?>
+        
         <li class="action-page-count" title="<?= t('System Triggered Actions')?>">
-            <i class="fa fa-cog" aria-hidden="true">&nbsp;</i> <?= $systemTriggerCounter ?>
+            <i class="fa fa-cog" aria-hidden="true">&nbsp;</i> 
+
+            <?php if ($systemTriggerCounter > 0): ?>
+                <?= $systemTriggerCounter ?>
+            <?php else: ?>
+                <?= $systemTriggerCounterZero ?>
+            <?php endif ?>
+
         </li>
         <li class="">
             <?= $this->modal->medium('plus', t('Add a new action'), 'ActionCreationController', 'create', array('project_id' => $project['id'])) ?>
