@@ -9,10 +9,12 @@
         <li class="action-page-count" title="<?= t('Actions for this project')?>">
             <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= count($actions) ?>
         </li>
+        
         <?php 
             //set counter variable for actions trigger count
             $userTriggerCounter = 0;
         ?>
+
         <?php foreach ($actions as $action):
             $systemTriggerCounter = $this->text->contains($action['event_name'], 'task.cronjob.daily') + 1;
             $systemTriggerCounter += 1;
@@ -27,7 +29,7 @@
         <?php
         $systemTriggerCounterZero = '0';
         ?>
-        
+
         <li class="action-page-count" title="<?= t('System Triggered Actions')?>">
             <i class="fa fa-cog" aria-hidden="true">&nbsp;</i> 
 
