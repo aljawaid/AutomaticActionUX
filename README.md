@@ -1,15 +1,15 @@
 # AutomaticActionUX
-Change the Automatic Action interface to make it more user friendly when viewing
+
 
 Automatic Action Plugin for Kanboard
 ==========================
 
 This plugin changes the Automatic Action interface to make it more user friendly when viewing. This is particularly useful for visual learners and non-English speaking users.
 
-Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban project management software")
+Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")
 
 
-Main Features
+Features
 -------------
 
 - Simplified the Automatic Actions page in `Project Settings`
@@ -18,17 +18,20 @@ Main Features
 - Converted existing core layout to a better table
 - Display total actions for the project
 - Identify difference between user-triggered and system-triggered actions
+- **NEW:** Add Action Data in Board View _(v1.5)_
 
 
-Screenshot
+Screenshots
 ----------
-![Screenshot](../master/screenshot.png "Current Version")
+![Screenshot](../master/screenshot.png "Automatic Actions Listing Page")
+![Screenshot](../master/screenshot-board.png "Board View")
 
 
 Translations
 ------------
 
 - English (UK)
+- _Contributors welcome_
 
 
 Compatibility
@@ -63,7 +66,7 @@ Authors & Contributors
 ----------------------
 
 - @aljawaid - Author
-
+- _Contributors welcome_
 
 License
 -------
