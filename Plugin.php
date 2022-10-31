@@ -10,18 +10,18 @@ class Plugin extends Base
 {
     
 	public function initialize()
-    
 	{
-        
-		//template
+		// Template Override
+		//  - Override name should be camelCase e.g. pluginNameExampleCamelCase
         	$this->template->setTemplateOverride('action/index', 'automaticActionUX:action/index');
 
-        	//css
-        	$this->hook->on('template:layout:css', array('template' => 'plugins/AutomaticActionUX/Assets/css/automaticactionux.css'));
+       	// CSS - Asset Hook
+       	//  - Keep filename lowercase
+        	$this->hook->on('template:layout:css', array('template' => 'plugins/AutomaticActionUX/Assets/css/automatic-action-ux.css'));
 
-        	//Board Views
+       	// Views - Board - Template Hook
+       	//  - Override name should start lowercase e.g. pluginNameExampleCamelCase
         	$this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'automaticActionUX:project_header/actions');
-    		
 	}
 	
 	public function onStartup()
@@ -29,10 +29,16 @@ class Plugin extends Base
                Translator::load($this->languageModel->getCurrentLanguage(), __DIR__.'/Locale');
         }
 
-	
+
 	public function getPluginName()	
 	{ 		 
+		// Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
 		return 'AutomaticActionUX';
+	}
+
+	public function getPluginDescription()
+	{
+		return t('This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.');
 	}
 
 	public function getPluginAuthor() 
@@ -45,10 +51,15 @@ class Plugin extends Base
 		return '1.0.0';
 	}
 
-	public function getPluginDescription() 
-	{ 
-		return 'This plugin changes the Automatic Action interface to make it more user friendly when viewing. This is particularly useful for visual learners and non-English speaking users.';
+	public function getCompatibleVersion()
+	{
+	    // Examples:
+	    // >=1.0.37
+	    // <1.0.37
+	    // <=1.0.37
+	    return '>=1.2.20';
 	}
+
 
 	public function getPluginHomepage() 
 	{ 	 
