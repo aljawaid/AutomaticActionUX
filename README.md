@@ -15,6 +15,11 @@ Features
 - Display total actions for the project
 - Identify difference between user-triggered and system-triggered actions
 - **NEW:** Add Action Data in Board View _(v1.5)_
+  - Add total actions (with user/system splits) relevant to project
+  - Show totals as a separate mini bar
+  - Show totals even if zero
+  - do not show on Project Actions Listing page
+  - Adjust styling for mini bar
 
 
 Screenshots
@@ -31,7 +36,7 @@ Screenshots
 Usage
 -------------
 
-Go to `Project` &#10562; `Configure Project` &#10562; Automatic Actions
+Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 
 Compatibility
 -------------
