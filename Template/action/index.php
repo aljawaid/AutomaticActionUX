@@ -61,8 +61,8 @@
                 <th class="action-table-column-title text-center cell-bg-title" width="30px"><?= t('Line Number') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><?= t('Trigger') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><?= t('Relation') ?></th>
-                <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('EventActivity') ?></th>
-                <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('ActionTitle') ?></th>
+                <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('Event Activity') ?></th>
+                <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('Action Title') ?></th>
                 <th class="action-table-column-title cell-bg-title"><?= t('Action Details') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><abbr title="This ID is for the Action, not the Action parameter"><?= t('Action ID') ?></abbr></th>
             </tr>
@@ -123,17 +123,17 @@
                         <div class="action-activity-icon">
                             <i class="fa fa-sticky-note-o" aria-hidden="true" title="<?= t('Task Create') ?>"></i>
                         </div>
-                        <div class="action-activity-text">Task Create/Edit</div>
+                        <div class="action-activity-text"><?= t('Task Create/Edit') ?></div>
 
                     <?php elseif ($this->text->contains($action['event_name'], 'task.create')): ?>
                         <div class="action-activity-icon">
-                            <i class="fa fa-sticky-note-o" aria-hidden="true" title="Task Create"></i>
+                            <i class="fa fa-sticky-note-o" aria-hidden="true" title="<?= t('Task Create') ?>"></i>
                         </div>
                         <div class="action-activity-text"><?= t('Task Create') ?></div>
 
                     <?php elseif ($this->text->contains($action['event_name'], 'task.update')): ?>
                         <div class="action-activity-icon">
-                            <i class="fa fa-sticky-note-o" aria-hidden="true" title="Task Update"></i>
+                            <i class="fa fa-sticky-note-o" aria-hidden="true" title="<?= t('Task Update') ?>"></i>
                         </div>
                         <div class="action-activity-text"><?= t('Task Update') ?></div>
 

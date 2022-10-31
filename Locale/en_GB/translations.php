@@ -1,5 +1,7 @@
 <?php
 return array(
+  'Automatic actions' => 'Automatic Actions',
+  'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.' => 'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.',
   'Automatic Actions for Project' => 'Automatic Actions',
   'Actions for this project' => 'Automatic Actions for this project',
   'View all actions for this project' => 'View all associated actions for this project',
@@ -11,8 +13,8 @@ return array(
   'Line Number' => 'N°',
   'Trigger' => 'Trigger',
   'Relation' => 'Relation',
-  'EventActivity' => 'Event',
-  'ActionTitle' => 'Action',
+  'Event Activity' => 'Event',
+  'Action Title' => 'Action',
   'Action Details' => 'Action Details',
   'Action ID' => 'Action ID',
   'System' => 'Automatic',
@@ -21,6 +23,7 @@ return array(
   'Subtask' => 'Subtask',
   'Move Column' => 'Move Column',
   'Task Create' => 'Task Create',
+  'Task Create/Edit' => 'Task Create/Edit',
   'Task Update' => 'Task Update',
   'Move Swimlane' => 'Move Swimlane',
   'Task Close' => 'Task Close',
