@@ -13,10 +13,11 @@
         <?php 
             //set counter variable for actions trigger count
             $userTriggerCounter = 0;
+            $systemTriggerCounter = 0;
         ?>
 
         <?php foreach ($actions as $action):
-            $systemTriggerCounter = $this->text->contains($action['event_name'], 'task.cronjob.daily') + 1;
+            $systemTriggerCounter = $this->text->contains($action['event_name'], 'task.cronjob.daily');
             $systemTriggerCounter += 1;
         endforeach;
         $userTriggerCounterResult = (count($actions)) - $systemTriggerCounter;
