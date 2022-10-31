@@ -16,8 +16,10 @@
 	?>
 
     <?php foreach ($actions as $action):
-    	$systemTriggerCounter = $this->text->contains($action['event_name'], 'task.cronjob.daily');
-    	$systemTriggerCounter += 1;
+    	$systemTrigger = $this->text->contains($action['event_name'], 'task.cronjob.daily');
+    	if ($systemTrigger) {
+                $systemTriggerCounter += 1;
+            }
     endforeach;
         $userTriggerCounterResult = (count($actions)) - $systemTriggerCounter;
     ?>
