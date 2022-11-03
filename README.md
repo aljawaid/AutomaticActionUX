@@ -83,6 +83,8 @@ Translations
 ------------
 
 - English (UK)
+- German (Standard, Formal)
+- German (Standard, Informal)
 - _Contributors welcome_
 
 
@@ -91,6 +93,7 @@ Authors & Contributors
 
 - [@aljawaid](https://github.com/aljawaid) - Author
 - [Craig Crosby](https://github.com/creecros) - Contributor
+- [Stehle](https://github.com/stehlegg) - Contributor
 - _Contributors welcome_
 
 License
