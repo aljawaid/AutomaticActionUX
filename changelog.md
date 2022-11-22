@@ -1,5 +1,15 @@
 # AutomaticActionUX Changelog
 
+## v1.7
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- Change License to MIT
+- FIX: Missing Translation String
+- FIX: German Language Strings
+
+
 ## v1.6
 
 ### What's Changed
