@@ -53,7 +53,7 @@ return array(
   'Subtasks Due' => 'Teilaufgabe fällig',
   'Create Subtasks and Activate Timers' => 'Teilaufgabe erstellen und Timer starten',
   'Activate Timers' => 'Timer starten',
-  'This ID is for the Action not the Action parameter' => 'Diese ID ist für die Aktion, nicht für die Parameter',
+  'This ID is for the Action, not the Action parameter' => 'Diese ID ist für die Aktion, nicht für die Parameter',
   'Automatic action not found: "%s' => 'Automatische Aktion nicht gefunden: "%s',
   'Event name' => 'Ereignis Name',
   'Assignee' => 'Zugewiesen an:',

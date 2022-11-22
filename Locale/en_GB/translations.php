@@ -53,7 +53,7 @@ return array(
   'Subtasks Due' => 'Subtasks Due',
   'Create Subtasks and Activate Timers' => 'Create Subtasks and Activate Timers',
   'Activate Timers' => 'Activate Timers',
-  'This ID is for the Action not the Action parameter' => 'This ID is for the Action, not the Action parameter',
+  'This ID is for the Action, not the Action parameter' => 'This ID is for the Action, not the Action parameter',
   'Automatic action not found: "%s' => 'Automatic action not found: "%s',
   'Event name' => 'Event Name',
   'Assignee' => 'Assigned To',
