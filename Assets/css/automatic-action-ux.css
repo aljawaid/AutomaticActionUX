@@ -89,6 +89,7 @@
     text-align: center;
     color: var(--pp-grey);
     position: relative;
+    background: 0;
 }
 
 .action-activity-icon {
@@ -104,6 +105,7 @@
     text-align: center;
     color: var(--pp-grey);
     position: relative;
+    background: 0;
 }
 
 .action-action-icon {
