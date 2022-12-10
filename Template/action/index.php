@@ -334,7 +334,7 @@
 
             </tr>
             <tr class="action-table-row">
-                <td class="">
+                <td class="bl-0">
                     <?php if (! isset($available_params[$action['action_name']])): ?>
                         <p class="alert alert-error"><?= t('Automatic action not found: "%s"', $action['action_name']) ?></p>
                     <?php else: ?>

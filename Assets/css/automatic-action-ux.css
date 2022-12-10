@@ -41,11 +41,16 @@
 }
 
 #ActionTable {
-    border-collapse: collapse;
+    border-collapse: unset;
+    border: 2px outset var(--button-blue-border-gradient-match);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 }
 
 #ActionTable > tbody {
-    border: 2px outset var(--button-blue-border-gradient-match);
+    /*border: 2px outset var(--button-blue-border-gradient-match);*/
 }
 
 .cell-bg {
@@ -57,12 +62,12 @@
 }
 
 #ActionTable > thead {
-    border: 2px outset var(--button-blue-border-gradient-match);
+    /*border: 2px outset var(--button-blue-border-gradient-match);*/
     border-bottom: 0;
 }
 
 #ActionTable > tbody > tr > th, #ActionTable > tbody > tr > td, #ActionTable > thead > tr > th {
-    border: 1px solid var(--button-blue-border-gradient-match);
+    /*border: 1px solid var(--button-blue-border-gradient-match);*/
     border-bottom: 0;
 }
 
@@ -70,12 +75,16 @@
     border-left: 0;
 }
 
-#ActionTable thead > tr > th, #ActionTable > tbody > tr > td, #ActinTable > tbody > tr > th {
+#ActionTable thead > tr > th, #ActionTable > tbody > tr > td, #ActionTable > tbody > tr > th {
     padding-left: 3px;
 }
 
 #ActionTable > tbody > tr > th:first-child, #ActionTable > thead > tr > th:first-child {
-    border-top-left-radius: var(--border-radius);
+    border-top-left-radius: unset;
+}
+
+#ActionTable > tbody > tr > th:last-child, #ActionTable > thead > tr > th:last-child {
+    border-top-right-radius: unset;
 }
 
 .line-no, .action-id {
@@ -191,4 +200,8 @@ ul#BoardViews li:last-of-type {
 
 .display-none {
     display: none !important;
+}
+
+.bl-0 {
+    border-left: 0 !important;
 }
