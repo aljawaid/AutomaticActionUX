@@ -1,5 +1,18 @@
 # AutomaticActionUX Changelog
 
+
+## v1.8
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- Add PluginManager to README.md
+- Prepare 2023
+- FIX: Box Shadow Variable
+- FIX: CSS Borders
+- FIX: Table Cell Border Conflict- CSS Conflicting with Plugin Manager
+
+
 ## v1.7
 
 ### What's Changed
@@ -54,4 +67,4 @@ _(most recent changes are listed on top):_
 - NEW: Add Readme
 
 
- [**Full Changelog**](../master/changelog.md "See changes")
+Read the full [**Changelog**](../master/changelog.md "See changes") or view the [**README**](../master/README.md "View README")
