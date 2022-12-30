@@ -60,7 +60,9 @@ Installation
 
 - **Install via [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
   - _Go to_ Kanboard: `Settings` -> `Plugins` -> `Plugin Directory`
-
+  - _or with [PluginManager](https://github.com/aljawaid/PluginManager) installed:_
+    - Kanboard: `Settings` &#10562; `Plugins` &#10562; `Plugin Directory`
+    
 **_or_**
 
 - **Install via [Releases](../master/Releases/ "A copy of each release is saved in the folder") folder**
