@@ -11,6 +11,9 @@
             <?php else: ?>
                 <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= count($actions) ?>
             <?php endif ?>
+    <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
+    <a href="<?= $this->url->href('ActionController', 'index', array('project_id' => $project['id']), false, '', '') ?>">
+    <?php endif ?>
         </div>
 
         <?php
@@ -43,4 +46,7 @@
             <?php endif ?>
         </div>
     </div>
+    <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
+    </a>
+    <?php endif ?>
 </li>
