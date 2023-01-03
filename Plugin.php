@@ -21,7 +21,7 @@ class Plugin extends Base
 
        	// Views - Board - Template Hook
        	//  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        	$this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'automaticActionUX:project_header/actions');
+        	$this->template->hook->attach('template:project:dropdown', 'automaticActionUX:project_header/actions');
 	}
 	
 	public function onStartup()
