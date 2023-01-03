@@ -7,7 +7,7 @@
 
 _(most recent changes are listed on top):_
 - Move Mini Bar to Dropdown Menu
-- General code cleanup and improvemnts
+- General code cleanup and improvements
 
 
 ## v1.8
