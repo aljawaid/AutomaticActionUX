@@ -1,6 +1,7 @@
 <?php
 return array(
   'Automatic actions' => 'Automatische Aktionen',
+  'Automatic Actions' => 'Automatische Aktionen',
   'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.' => 'Mit diesem Plugin wird die Übersicht über automatische Aktionen komplett überarbeitet, um sie benutzerfreundlicher zu gestalten. Besonders nützlich für visuelle Lernende und nicht Englisch sprechende Benutzer, fügt dieses Plugin einen schnellen Blick auf die Aktionen auf dem Board hinzu, um Fehler durch unbedachtes rumspielen vorzubeugen.',
   'Automatic Actions for Project' => 'Automatische Aktionen',
   'Actions for this project' => 'Automatische Aktionen für dieses Projekt',

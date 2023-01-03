@@ -1,6 +1,7 @@
 <?php
 return array(
   'Automatic actions' => 'Automatic Actions',
+  'Automatic Actions' => 'Automatic Actions',
   'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.' => 'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.',
   'Automatic Actions for Project' => 'Automatic Actions',
   'Actions for this project' => 'Automatic Actions for this project',
