@@ -8,18 +8,17 @@ This plugin gives the Automatic Action interface a complete makeover to make it 
 Features
 -------------
 
-- Simplified the Automatic Actions page in `Project Settings`
+- Simplified and revamped the Automatic Actions page in `Project Settings`
 - Added icons for better user experience
 - Display Action IDs
 - Converted existing core layout to a better table
 - Display total actions for the project
 - Identify difference between user-triggered and system-triggered actions
-- **NEW:** Add Action Data in Board View _(v1.5)_
-  - Add total actions (with user/system splits) relevant to project
-  - Show totals as a separate mini bar
+- Add action data in the project dropdown menu
+  - Add total actions (with user/system splits) relevant to the project
+  - Display totals as a separate mini bar
   - Show totals even if zero
-  - do not show on Project Actions Listing page
-  - Adjust styling for mini bar
+  - Do not show on Project Automatic Actions Listing page
 
 
 Screenshots
@@ -27,16 +26,18 @@ Screenshots
 
 **Automatic Actions Listing Page**  
 
-![Screenshot](../master/screenshot.png "Automatic Actions Listing Page")
+![Automatic Actions Listing Page](../master/screenshot.png "Automatic Actions Listing Page")
 
-**Board View**  
+**Project Dropdown Menu**  
 
-![Screenshot](../master/screenshot-board.png "Board View")
+![Project Dropdown Menu](../master/screenshot-dropdown.png "Project Dropdown Menu")
+
 
 Usage
 -------------
 
 Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
+
 
 Compatibility
 -------------
@@ -100,6 +101,7 @@ Authors & Contributors
 - [Stehle](https://github.com/stehlegg) - Contributor
 - [Thojo0](https://github.com/thojo0) - Contributor
 - _Contributors welcome_
+
 
 License
 -------
