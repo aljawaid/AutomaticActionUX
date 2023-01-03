@@ -162,7 +162,8 @@
 }
 
 #BoardActions {
-    display: inline-block;
+    /*display: inline-block;*/
+    padding-right: 5px;
 }
 
 #BoardActions .action-page-count {
@@ -204,4 +205,12 @@ ul#BoardViews li:last-of-type {
 
 .bl-0 {
     border-left: 0 !important;
+}
+
+.board-actions-title {
+    display: inline-block;
+}
+
+.board-actions-counts {
+    float: right;
 }
