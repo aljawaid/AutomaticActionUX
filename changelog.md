@@ -1,6 +1,15 @@
 # AutomaticActionUX Changelog
 
 
+## v1.9
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- Move Mini Bar to Dropdown Menu
+- General code cleanup and improvemnts
+
+
 ## v1.8
 
 ### What's Changed
