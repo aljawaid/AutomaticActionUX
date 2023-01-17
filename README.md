@@ -91,6 +91,7 @@ Translations
 - German (Standard, Formal)
 - German (Standard, Informal)
 - _Contributors welcome_
+- _Starter template available_
 
 
 Authors & Contributors
