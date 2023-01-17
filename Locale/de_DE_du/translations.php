@@ -1,13 +1,28 @@
 <?php
 return array(
-  'Automatic actions' => 'Automatische Aktionen',
-  'Automatic Actions' => 'Automatische Aktionen',
+  //
+  // GENERAL
+  //
   'This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.' => 'Mit diesem Plugin wird die Übersicht über automatische Aktionen komplett überarbeitet, um sie benutzerfreundlicher zu gestalten. Besonders nützlich für visuelle Lernende und nicht Englisch sprechende Benutzer, fügt dieses Plugin einen schnellen Blick auf die Aktionen auf dem Board hinzu, um Fehler durch unbedachtes rumspielen vorzubeugen.',
-  'Automatic Actions for Project' => 'Automatische Aktionen',
+  //
+  // CORE OVERRIDES OR 3RD PARTY PLUGIN TRANSLATIONS AFFECTING THIS PLUGIN
+  //
+  'Automatic actions' => 'Automatische Aktionen',
+  'Duration in days' => 'Dauer in Tagen',
+  'Assignee' => 'Zugewiesen an:',
+  'Destination swimlane' => 'Ziel-Swimlane',
+  //
+  // project_header/actions.php
+  //
+  'Automatic Actions' => 'Automatische Aktionen',
   'Actions for this project' => 'Automatische Aktionen für dieses Projekt',
   'View all actions for this project' => 'Alle zu diesem Projekt gehörende Aktionen anzeigen',
   'User Triggered Actions' => 'von Benutzern ausgelöste Aktionen',
   'System Triggered Actions' => 'vom System ausgelöste Aktionen',
+  //
+  // action/index.php
+  //
+  'Automatic Actions for Project' => 'Automatische Aktionen',
   'Add a new action' => 'Neue Aktion hinzufügen',
   'Import from another project' => 'Aus einem anderen Projekt importieren',
   'There is no action at the moment.' => 'Für dieses Projekt wurden noch keine Aktionen erstellt',
@@ -17,6 +32,7 @@ return array(
   'Event Activity' => 'Ereignis',
   'Action Title' => 'Aktion',
   'Action Details' => 'Aktions Details',
+  'This ID is for the Action not the Action parameter' => 'Diese ID ist für die Aktion, nicht für die Parameter',
   'Action ID' => 'Aktions ID',
   'System' => 'Automatisch',
   'User' => 'Benutzer',
@@ -54,10 +70,7 @@ return array(
   'Subtasks Due' => 'Teilaufgabe fällig',
   'Create Subtasks and Activate Timers' => 'Teilaufgabe erstellen und Timer starten',
   'Activate Timers' => 'Timer starten',
-  'This ID is for the Action not the Action parameter' => 'Diese ID ist für die Aktion, nicht für die Parameter',
-  'Automatic action not found: "%s' => 'Automatische Aktion nicht gefunden: "%s',
-  'Event name' => 'Ereignis Name',
-  'Assignee' => 'Zugewiesen an:',
-  'Duration in days' => 'Dauer in Tagen',
-  'Destination swimlane' => 'Ziel-Swimlane',
+  'Delete Automatic Action' => 'Automatische Aktion löschen',
+  'Automatic Action not found: "%s"' => 'Automatische Aktion nicht gefunden: "%s"',
+  'Event Name' => 'Ereignis Name',
 );
