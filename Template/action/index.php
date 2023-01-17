@@ -336,11 +336,11 @@
             <tr class="action-table-row">
                 <td class="bl-0">
                     <?php if (! isset($available_params[$action['action_name']])): ?>
-                        <p class="alert alert-error"><?= t('Automatic action not found: "%s"', $action['action_name']) ?></p>
+                        <p class="alert alert-error"><?= t('Automatic Action not found: "%s"', $action['action_name']) ?></p>
                     <?php else: ?>
                     <ul class="">
                         <li class="">
-                            <?= t('Event name') ?> =
+                            <?= t('Event Name') ?> =
                             <strong><?= $this->text->in($action['event_name'], $available_events) ?></strong>
                         </li>
                         <?php foreach ($action['params'] as $param_name => $param_value): ?>
