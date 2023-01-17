@@ -71,6 +71,6 @@ return array(
   'Create Subtasks and Activate Timers' => 'Teilaufgabe erstellen und Timer starten',
   'Activate Timers' => 'Timer starten',
   'Delete Automatic Action' => 'Automatische Aktion löschen',
-  'Automatic Action not found: "%s' => 'Automatische Aktion nicht gefunden: "%s',
+  'Automatic Action not found: "%s"' => 'Automatische Aktion nicht gefunden: "%s"',
   'Event Name' => 'Ereignis Name',
 );
