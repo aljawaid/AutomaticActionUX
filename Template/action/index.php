@@ -346,7 +346,11 @@
                         <?php foreach ($action['params'] as $param_name => $param_value): ?>
                             <li class="">
                                 <?php if (isset($available_params[$action['action_name']][$param_name]) && is_array($available_params[$action['action_name']][$param_name])): ?>
-                                    <?= $this->text->e(ucfirst($param_name)) ?> =
+                                    <?php if ($param_name == 'send_to'): ?>
+                                        <?= t('Email Recipient(s)') ?> =
+                                    <?php else: ?>
+                                        <?= $this->text->e(ucfirst($param_name)) ?> =
+                                    <?php endif ?>
                                 <?php else: ?>
                                     <?= $this->text->in($param_name, $available_params[$action['action_name']]) ?> =
                                 <?php endif ?>
@@ -365,6 +369,28 @@
                                         <?= $this->text->in($param_value, $links_list) ?>
                                     <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
                                         <?= $this->text->in($param_value, $swimlane_list) ?>
+                                    <?php elseif ($this->text->contains($param_name, 'check_box')): ?>
+                                        <?php if ($param_value == '1'): ?>
+                                            <?= t('Yes') ?>
+                                        <?php else: ?>
+                                            <?= t('No') ?>
+                                        <?php endif ?>
+                                    <?php elseif (is_array($available_params[$action['action_name']][$param_name]) && ($param_name == 'send_to')): ?>
+                                        <?php if ($param_value == 'assignee'): ?>
+                                            <?= t('Task Assignee') ?>
+                                        <?php elseif ($param_value == 'creator'): ?>
+                                            <?= t('Task Creator') ?>
+                                        <?php elseif ($param_value == 'both'): ?>
+                                            <?= t('Task Assignee & Task Creator') ?>
+                                        <?php elseif ($param_value == 'assignee_project_email'): ?>
+                                            <?= t('Task Assignee & Project Email Address') ?>
+                                        <?php elseif ($param_value == 'creator_project_email'): ?>
+                                            <?= t('Task Creator & Project Email Address') ?>
+                                        <?php elseif ($param_value == 'project_email'): ?>
+                                            <?= t('Project Email Address') ?>
+                                        <?php elseif ($param_value == 'all'): ?>
+                                            <?= t('Task Assignee, Task Creator & Project Email Address') ?>
+                                        <?php endif ?>
                                     <?php else: ?>
                                         <?= $this->text->e($param_value) ?>
                                     <?php endif ?>
