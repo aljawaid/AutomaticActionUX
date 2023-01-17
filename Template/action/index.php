@@ -315,7 +315,7 @@
                         <a href="#" class="dropdown-menu dropdown-menu-link-icon action-dropdown"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></a>
                         <ul class="">
                             <li class="">
-                                <?= $this->modal->confirm('trash-o', t('Remove'), 'ActionController', 'confirm', array('project_id' => $project['id'], 'action_id' => $action['id'])) ?>
+                                <?= $this->modal->confirm('trash-o', t('Delete Automatic Action'), 'ActionController', 'confirm', array('project_id' => $project['id'], 'action_id' => $action['id'])) ?>
                             </li>
                         </ul>
                     </div>
