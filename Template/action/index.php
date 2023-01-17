@@ -58,7 +58,7 @@
     <table id="ActionTable" class="table-scrolling action-table">
         <thead>
             <tr class="action-table-row">
-                <th class="action-table-column-title text-center cell-bg-title" width="30px"><?= t('Line Number') ?></th>
+                <th class="action-table-column-title text-center cell-bg-title" width="30px"><?= t('N°') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><?= t('Trigger') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><?= t('Relation') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('Event Activity') ?></th>

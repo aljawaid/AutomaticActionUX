@@ -26,7 +26,7 @@ return array(
   'Add a new action' => '',
   'Import from another project' => '',
   'There is no action at the moment.' => '',
-  'Line Number' => '',
+  'N°' => '',
   'Trigger' => '',
   'Relation' => '',
   'Event Activity' => '',

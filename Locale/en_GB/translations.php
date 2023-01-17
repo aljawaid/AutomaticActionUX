@@ -26,7 +26,7 @@ return array(
   'Add a new action' => 'Add new action',
   'Import from another project' => 'Import from another project',
   'There is no action at the moment.' => 'No automatic actions exist for this project',
-  'Line Number' => 'N°',
+  'N°' => 'N°',
   'Trigger' => 'Trigger',
   'Relation' => 'Relation',
   'Event Activity' => 'Event',

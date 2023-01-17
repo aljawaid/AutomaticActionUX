@@ -26,7 +26,7 @@ return array(
   'Add a new action' => 'Neue Aktion hinzufügen',
   'Import from another project' => 'Aus einem anderen Projekt importieren',
   'There is no action at the moment.' => 'Für dieses Projekt wurden noch keine Aktionen erstellt',
-  'Line Number' => 'Zeile',
+  'N°' => 'Zeile',
   'Trigger' => 'Auslöser',
   'Relation' => 'Verbindung',
   'Event Activity' => 'Ereignis',
