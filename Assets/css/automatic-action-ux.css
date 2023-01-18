@@ -238,6 +238,11 @@ ul#BoardViews li:last-of-type {
     font-size: .875em;
 }
 
+
+.action-event-name span {
+    font-style: italic;
+}
+
 .dropdown-right {
     float: right;
 }

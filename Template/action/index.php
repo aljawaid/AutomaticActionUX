@@ -339,8 +339,7 @@
                     <?php else: ?>
                     <ul class="">
                         <li class="">
-                            <?= t('Event Name') ?> =
-                            <strong><?= $this->text->in($action['event_name'], $available_events) ?></strong>
+                            <?= t('Event Name') ?> = <span class=""><?= $this->text->in($action['event_name'], $available_events) ?></span>
                         </li>
                         <?php foreach ($action['params'] as $param_name => $param_value): ?>
                             <li class="">
@@ -353,56 +352,56 @@
                                 <?php else: ?>
                                     <?= $this->text->in($param_name, $available_params[$action['action_name']]) ?> =
                                 <?php endif ?>
-                                <strong>
-                                    <?php if ($this->text->contains($param_name, 'column_id')): ?>
-                                        <?= $this->text->in($param_value, $columns_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'user_id')): ?>
-                                        <?= $this->text->in($param_value, $users_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'project_id')): ?>
-                                        <?= $this->text->in($param_value, $projects_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'color_id')): ?>
-                                        <?= $this->text->in($param_value, $colors_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'category_id')): ?>
-                                        <?= $this->text->in($param_value, $categories_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'link_id')): ?>
-                                        <?= $this->text->in($param_value, $links_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
-                                        <?= $this->text->in($param_value, $swimlane_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'check_box_include_')): ?>
-                                        <?php if ($param_value == '1'): ?>
-                                            <?= t('Yes') ?>
-                                        <?php else: ?>
-                                            <?= t('No') ?>
-                                        <?php endif ?>
-                                    <?php elseif ($this->text->contains($param_name, 'email_subject')): ?>
-                                        <?php if ($param_value == null): ?>
-                                            <i class="not-set"><?= t('Not set') ?></i>
-                                            <div class="form-help form-help-not-set">
-                                                <abbr title="<?= t('Default Subject: Activity Report') ?>"><?= t('(The default subject will be used)') ?></abbr>
-                                            </div>
-                                        <?php else: ?>
-                                            <?= $this->text->e($param_value) ?>
-                                        <?php endif ?>
-                                    <?php elseif (is_array($available_params[$action['action_name']][$param_name]) && ($param_name == 'send_to')): ?>
-                                        <?php if ($param_value == 'assignee'): ?>
-                                            <?= t('Task Assignee') ?>
-                                        <?php elseif ($param_value == 'creator'): ?>
-                                            <?= t('Task Creator') ?>
-                                        <?php elseif ($param_value == 'both'): ?>
-                                            <?= t('Task Assignee & Task Creator') ?>
-                                        <?php elseif ($param_value == 'assignee_project_email'): ?>
-                                            <?= t('Task Assignee & Project Email Address') ?>
-                                        <?php elseif ($param_value == 'creator_project_email'): ?>
-                                            <?= t('Task Creator & Project Email Address') ?>
-                                        <?php elseif ($param_value == 'project_email'): ?>
-                                            <?= t('Project Email Address') ?>
-                                        <?php elseif ($param_value == 'all'): ?>
-                                            <?= t('Task Assignee, Task Creator & Project Email Address') ?>
-                                        <?php endif ?>
+
+                                <?php if ($this->text->contains($param_name, 'column_id')): ?>
+                                    <?= $this->text->in($param_value, $columns_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'user_id')): ?>
+                                    <?= $this->text->in($param_value, $users_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'project_id')): ?>
+                                    <?= $this->text->in($param_value, $projects_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'color_id')): ?>
+                                    <?= $this->text->in($param_value, $colors_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'category_id')): ?>
+                                    <?= $this->text->in($param_value, $categories_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'link_id')): ?>
+                                    <?= $this->text->in($param_value, $links_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
+                                    <?= $this->text->in($param_value, $swimlane_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'check_box_include_')): ?>
+                                    <?php if ($param_value == '1'): ?>
+                                        <?= t('Yes') ?>
+                                    <?php else: ?>
+                                        <?= t('No') ?>
+                                    <?php endif ?>
+                                <?php elseif ($this->text->contains($param_name, 'email_subject')): ?>
+                                    <?php if ($param_value == null): ?>
+                                        <i class="not-set"><?= t('Not set') ?></i>
+                                        <div class="form-help form-help-not-set">
+                                            <abbr title="<?= t('Default Subject: Activity Report') ?>"><?= t('(The default subject will be used)') ?></abbr>
+                                        </div>
                                     <?php else: ?>
                                         <?= $this->text->e($param_value) ?>
                                     <?php endif ?>
-                                </strong>
+                                <?php elseif (is_array($available_params[$action['action_name']][$param_name]) && ($param_name == 'send_to')): ?>
+                                    <?php if ($param_value == 'assignee'): ?>
+                                        <?= t('Task Assignee') ?>
+                                    <?php elseif ($param_value == 'creator'): ?>
+                                        <?= t('Task Creator') ?>
+                                    <?php elseif ($param_value == 'both'): ?>
+                                        <?= t('Task Assignee & Task Creator') ?>
+                                    <?php elseif ($param_value == 'assignee_project_email'): ?>
+                                        <?= t('Task Assignee & Project Email Address') ?>
+                                    <?php elseif ($param_value == 'creator_project_email'): ?>
+                                        <?= t('Task Creator & Project Email Address') ?>
+                                    <?php elseif ($param_value == 'project_email'): ?>
+                                        <?= t('Project Email Address') ?>
+                                    <?php elseif ($param_value == 'all'): ?>
+                                        <?= t('Task Assignee, Task Creator & Project Email Address') ?>
+                                    <?php endif ?>
+                                <?php else: ?>
+                                    <?= $this->text->e($param_value) ?>
+                                <?php endif ?>
+
                             </li>
                         <?php endforeach ?>
                     </ul>
