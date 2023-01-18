@@ -375,6 +375,15 @@
                                         <?php else: ?>
                                             <?= t('No') ?>
                                         <?php endif ?>
+                                    <?php elseif ($this->text->contains($param_name, 'email_subject')): ?>
+                                        <?php if ($param_value == null): ?>
+                                            <i class="not-set"><?= t('Not set') ?></i>
+                                            <div class="form-help form-help-not-set">
+                                                <abbr title="<?= t('Default Subject: Activity Report') ?>"><?= t('(The default subject will be used)') ?></abbr>
+                                            </div>
+                                        <?php else: ?>
+                                            <?= $this->text->e($param_value) ?>
+                                        <?php endif ?>
                                     <?php elseif (is_array($available_params[$action['action_name']][$param_name]) && ($param_name == 'send_to')): ?>
                                         <?php if ($param_value == 'assignee'): ?>
                                             <?= t('Task Assignee') ?>

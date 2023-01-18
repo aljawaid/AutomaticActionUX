@@ -83,4 +83,7 @@ return array(
   'Task Assignee, Task Creator & Project Email Address' => '',
   'Yes' => '',
   'No' => '',
+  'Not set' => '',
+  'Default Subject: Activity Report' => '',
+  'The default subject will be used' => '',
 );

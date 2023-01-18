@@ -83,4 +83,7 @@ return array(
   'Task Assignee, Task Creator & Project Email Address' => 'Aufgabenbeauftragter, Aufgabenersteller und Projekt-E-Mail-Adresse',
   'Yes' => 'Ja',
   'No' => 'Nein',
+  'Not set' => 'Nicht festgelegt',
+  'Default Subject: Activity Report' => 'Standardbetreff: Aktivitätsbericht',
+  'The default subject will be used' => 'Der Standardbetreff wird verwendet',
 );

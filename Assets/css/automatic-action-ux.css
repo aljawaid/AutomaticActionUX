@@ -214,3 +214,15 @@ ul#BoardViews li:last-of-type {
 .board-actions-counts {
     float: right;
 }
+
+.not-set {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.form-help-not-set {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    font-size: .875em;
+}
