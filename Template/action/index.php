@@ -63,7 +63,7 @@
                 <th class="action-table-column-title text-center cell-bg-title"><?= t('Relation') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('Event Activity') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title" width="100px"><?= t('Action Title') ?></th>
-                <th class="action-table-column-title cell-bg-title"><?= t('Action Details') ?></th>
+                <th class="action-table-column-title cell-bg-title pl-15"><?= t('Action Details') ?></th>
                 <th class="action-table-column-title text-center cell-bg-title"><abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= t('Action ID') ?></abbr></th>
             </tr>
         </thead>

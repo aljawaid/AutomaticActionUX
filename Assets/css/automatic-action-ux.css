@@ -86,6 +86,10 @@ table#ActionTable > tbody > tr > td {
     padding-left: 3px;
 }
 
+#ActionTable thead > tr > th.pl-15 {
+    padding-left: 15px;
+}
+
 #ActionTable > tbody > tr > th:first-child, #ActionTable > thead > tr > th:first-child {
     border-top-left-radius: unset;
 }
@@ -236,3 +240,4 @@ ul#BoardViews li:last-of-type {
 .action-event-name span {
     font-style: italic;
 }
+
