@@ -369,7 +369,7 @@
                                         <?= $this->text->in($param_value, $links_list) ?>
                                     <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
                                         <?= $this->text->in($param_value, $swimlane_list) ?>
-                                    <?php elseif ($this->text->contains($param_name, 'check_box')): ?>
+                                    <?php elseif ($this->text->contains($param_name, 'check_box_include_')): ?>
                                         <?php if ($param_value == '1'): ?>
                                             <?= t('Yes') ?>
                                         <?php else: ?>
