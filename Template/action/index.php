@@ -316,7 +316,7 @@
                     <?php else: ?>
                         <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= $this->text->in($action['action_name'], $available_actions) ?>
                     <?php endif ?>
-                    <div class="dropdown dropdown-right">
+                    <div class="dropdown float-right">
                         <a href="#" class="dropdown-menu dropdown-menu-link-icon action-dropdown"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></a>
                         <ul class="">
                             <li class="">
