@@ -53,8 +53,19 @@
     /*border: 2px outset var(--button-blue-border-gradient-match);*/
 }
 
-.cell-bg {
+table#ActionTable > tbody > tr > th.cell-bg {
     background-color: var(--alert-background-color-info);
+    padding-right: 3px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+table#ActionTable > tbody > tr > td {
+    padding-right: 3px;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .cell-bg-title {
