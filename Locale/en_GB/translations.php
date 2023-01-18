@@ -11,6 +11,7 @@ return array(
   'Duration in days' => 'Duration in Days',
   'Assignee' => 'Assigned To',
   'Destination swimlane' => 'Destination Swimlane',
+  'Email subject' => 'Email Subject',
   //
   // project_header/actions.php
   //
