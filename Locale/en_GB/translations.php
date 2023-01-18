@@ -12,6 +12,8 @@ return array(
   'Assignee' => 'Assigned To',
   'Destination swimlane' => 'Destination Swimlane',
   'Email subject' => 'Email Subject',
+  'Your automatic action has been created successfully.' => 'Automatic Action was created successfully',
+  'Unable to create your automatic action.' => 'Unable to create Automatic Action',
   //
   // project_header/actions.php
   //
