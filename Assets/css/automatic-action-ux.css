@@ -49,10 +49,6 @@
     border-bottom-left-radius: var(--border-radius);
 }
 
-#ActionTable > tbody {
-    /*border: 2px outset var(--button-blue-border-gradient-match);*/
-}
-
 table#ActionTable > tbody > tr > th.cell-bg {
     background-color: var(--alert-background-color-info);
     padding-right: 3px;
@@ -152,14 +148,6 @@ table#ActionTable > tbody > tr > td {
     color: var(--pp-grey);
 }
 
-.action-alert {}
-
-.action-table {}
-
-.action-table-row {}
-
-.action-table-column-title {}
-
 .float-right {
     float: right;
 }
@@ -191,10 +179,6 @@ table#ActionTable > tbody > tr > td {
     padding-right: 4px !important;
     margin-right: 5px;
 }
-
-.board-actions {}
-
-.board-action-link {}
 
 /* ******************* */
 /* FIX FOR KANBOARDCSS */
