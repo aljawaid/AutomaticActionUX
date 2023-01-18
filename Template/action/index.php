@@ -311,7 +311,12 @@
             <?php $counter++; ?>
                 
                 <th class="cell-bg">
-                    <div class="dropdown">
+                    <?php if (! isset($available_params[$action['action_name']])): ?>
+                        <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= $this->text->e($action['action_name']) ?>
+                    <?php else: ?>
+                        <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= $this->text->in($action['action_name'], $available_actions) ?>
+                    <?php endif ?>
+                    <div class="dropdown dropdown-right">
                         <a href="#" class="dropdown-menu dropdown-menu-link-icon action-dropdown"><i class="fa fa-cog"></i><i class="fa fa-caret-down"></i></a>
                         <ul class="">
                             <li class="">
@@ -319,12 +324,6 @@
                             </li>
                         </ul>
                     </div>
-
-                <?php if (! isset($available_params[$action['action_name']])): ?>
-                    <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= $this->text->e($action['action_name']) ?>
-                <?php else: ?>
-                    <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= $this->text->in($action['action_name'], $available_actions) ?>
-                <?php endif ?>
                 </th>
 
                 <!-- ACTION ID - NOT ACTION PARAMETER ID -->

@@ -226,3 +226,7 @@ ul#BoardViews li:last-of-type {
     font-weight: normal;
     font-size: .875em;
 }
+
+.dropdown-right {
+    float: right;
+}
