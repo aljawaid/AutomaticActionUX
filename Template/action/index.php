@@ -328,7 +328,7 @@
 
                 <!-- ACTION ID - NOT ACTION PARAMETER ID -->
                 <td class="action-id" rowspan="2">
-                    <code title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= $action['id'] ?></code>
+                    <abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= $action['id'] ?></abbr>
                 </td>
 
             </tr>
