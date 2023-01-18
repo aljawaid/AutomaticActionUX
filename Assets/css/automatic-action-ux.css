@@ -238,6 +238,16 @@ ul#BoardViews li:last-of-type {
     font-size: .875em;
 }
 
+.action-details {
+    margin: auto 5px;
+}
+
+.action-details > span {
+    color: var(--pp-green-dark);
+    font-weight: 600;
+    display: block;
+    margin-top: 5px;
+}
 
 .action-event-name span {
     font-style: italic;

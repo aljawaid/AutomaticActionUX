@@ -337,10 +337,13 @@
                     <?php if (! isset($available_params[$action['action_name']])): ?>
                         <p class="alert alert-error"><?= t('Automatic Action not found: "%s"', $action['action_name']) ?></p>
                     <?php else: ?>
-                    <ul class="">
-                        <li class="">
+                    <ul class="action-details">
+                        <span class="action-event-title"><i class="fa fa-bolt" aria-hidden="true"></i> <?= t('Action Trigger') ?></span>
+                        <li class="action-event-name">
                             <?= t('Event Name') ?> = <span class=""><?= $this->text->in($action['event_name'], $available_events) ?></span>
                         </li>
+                        <span class="action-options"><i class="fa fa-cog fa-spin" aria-hidden="true"></i> <?= t('Selected Options') ?>
+                        </span>
                         <?php foreach ($action['params'] as $param_name => $param_value): ?>
                             <li class="">
                                 <?php if (isset($available_params[$action['action_name']][$param_name]) && is_array($available_params[$action['action_name']][$param_name])): ?>
