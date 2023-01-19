@@ -246,3 +246,15 @@ ul#BoardViews li:last-of-type {
     font-style: italic;
 }
 
+.action-event-title svg, .action-options svg {
+    color: var(--pp-green-dark);
+    width: 18px;
+}
+
+.action-event-title svg{
+    vertical-align: text-top;
+}
+
+.action-options svg {
+    vertical-align: bottom;
+}
