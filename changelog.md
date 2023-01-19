@@ -1,4 +1,47 @@
-# AutomaticActionUX Changelog
+# Changelog
+
+
+## v2.0
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: KanboardCSS Transition Compatibility
+- FIX: Make Buttons More Visible
+- FIX: Mention KanboardCSS Compatibility
+- FIX: Remove Unnecessary Translation String
+- FIX: Use Total Word Instead of Duplicate Icon - wording makes the flow more universal
+- FIX: Title Font Sizing
+- NEW: Add Unique Icon- Replace `fa-magic` with a better `svg` one
+- Add colour to bullets
+- FIX: Dropdown Menu Width - inline CSS used to remain specific to dropdown on page only, not elsewhere
+- FIX: Bullet Style and Position for Action Details
+- FIX: Replace Title Icons for Action Details - more meaningful icons for a better user experience
+- FIX: Title Margins
+- FIX: Rename `border-radius` Variable
+- FIX: CSS Variables
+- Switch HTML Elements
+- FIX: Title Cell Padding
+- Update translations
+- FIX: Use Existing Class
+- FIX: Do not use empty rulesets
+- FIX: No unit for zero needed
+- NEW: Split Action Details for Better User Experience
+- Cleanup Code - remove `<strong>` HTML element, style changes through CSS
+- FIX: Cell Padding
+- FIX: Grammar for Language String - #12
+- NEW: Clarify if Empty Subject - fixes #11 Add KanboardEmailHistory Compatibility
+- FIX: Improve Checkbox Parameter to be More Specific
+- NEW: Add KanboardEmailHistory Compatibility - fixes #11
+- NEW: Abbreviate Line Number Correctly - changed `Line Number` to `N°` to save column space #12
+- FIX: Translation String - #12
+- FIX: Recode `de_DE_du` Translations - #12
+- FIX: Recode `de_DE` Translations - #12
+- Update Translation Starter Template - #12 Translate Plugin
+- FIX: Recode `en_GB` Translations - #12
+- FIX: Language Strings - #12
+- FIX: Better Wording - #12
+- NEW: Add Translation Starter Template - #12 Translate Plugin
 
 
 ## v1.9
