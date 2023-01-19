@@ -270,3 +270,7 @@ ul#BoardViews li:last-of-type {
 .action-options-value {
     list-style: square;
 }
+
+.action-event-name::marker, .action-options-value::marker {
+    color: var(--pp-green-dark);
+}
