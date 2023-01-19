@@ -13,6 +13,7 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
+    --pp-orangered: #FF4500;
     --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --button-blue-border-gradient-match: #476E9E;
@@ -31,6 +32,19 @@
 #ActionPageHeader h2 {
     padding-bottom: 5px;
     margin-bottom: 5px;
+h2 > svg.aa-icon {
+    color: var(--pp-orangered);
+    vertical-align: sub;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.cell-bg svg.aa-icon {
+    color: var(--pp-orangered);
+    width: 1.6em;
+    height: auto;
+    vertical-align: middle;
+}
 }
 
 .action-page-count {
@@ -184,6 +198,11 @@ table#ActionTable > tbody > tr > td {
 #BoardActions .action-page-count:last-child {
     padding-right: 4px !important;
     margin-right: 5px;
+}
+
+#BoardActions .board-actions-title svg {
+    color: var(--pp-orangered);
+    vertical-align: sub;
 }
 
 /* ******************* */
