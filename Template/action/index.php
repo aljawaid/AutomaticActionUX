@@ -15,7 +15,7 @@
     </h2>
     <ul class="data-bar">
         <li class="action-page-count" title="<?= t('Actions for this project')?>">
-            <span class=""><?= t('Total') ?>:</span> <?= count($actions) ?>
+            <span class="page-count-total"><?= t('Total') ?>:</span> <strong><?= count($actions) ?></strong>
         </li>
         
         <?php 
