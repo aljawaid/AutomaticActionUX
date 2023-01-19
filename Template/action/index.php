@@ -13,7 +13,7 @@
             <i class="fa fa-folder" aria-hidden="true"></i> <strong><?= $project['name'] ?></strong>
         </span>
     </h2>
-    <ul class="">
+    <ul class="data-bar">
         <li class="action-page-count" title="<?= t('Actions for this project')?>">
             <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= count($actions) ?>
         </li>

@@ -52,6 +52,11 @@ h2 > svg.aa-icon {
     height: auto;
     vertical-align: middle;
 }
+
+#ActionPageHeader ul.data-bar {
+    margin-left: 0;
+    margin-right: 0;
+}
 }
 
 .action-page-count {
