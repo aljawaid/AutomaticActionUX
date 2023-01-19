@@ -87,9 +87,7 @@ _Note: The `/plugins` folder is case-sensitive._
 Translations
 ------------
 
-- English (UK)
-- German (Standard, Formal)
-- German (Standard, Informal)
+- English (UK), German (Standard, Formal), German (Standard, Informal)
 - _Contributors welcome_
 - _Starter template available_
 
