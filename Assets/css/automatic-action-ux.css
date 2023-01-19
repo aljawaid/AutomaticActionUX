@@ -22,6 +22,7 @@
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow-aa: 1px 1px 1px 0px #000;
     --border-radius-aa: 3px;
+    --transition-aa: ease-in-out all .3s;
 }
 
 .page #main section #ActionPageHeader {
@@ -72,6 +73,33 @@ h2 > svg.aa-icon {
     cursor: context-menu;
 }
 
+.import-action-btn {
+    border: 1px solid var(--pp-green-dark);
+    padding: 3px 5px;
+    border-radius: var(--border-radius-aa);
+    transition: var(--transition-aa);
+}
+
+.add-action-btn {
+    border: 1px solid var(--pp-green-dark);
+    padding: 3px 5px;
+    border-radius: var(--border-radius-aa);
+    background-color: var(--pp-green-dark);
+    transition: var(--transition-aa);
+}
+
+.add-action-btn a {
+    color: var(--pp-white);
+    transition: var(--transition-aa);
+}
+
+.add-action-btn:hover a {
+    color: var(--pp-green-dark) !important;
+}
+
+.add-action-btn:hover {
+    background-color: var(--pp-white);
+}
 #ActionTable {
     border-collapse: unset;
     border: 2px outset var(--button-blue-border-gradient-match);

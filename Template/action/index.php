@@ -52,10 +52,14 @@
 
         </li>
         <li class="">
-            <?= $this->modal->medium('plus', t('Add a new action'), 'ActionCreationController', 'create', array('project_id' => $project['id'])) ?>
+            <span class="add-action-btn">
+                <?= $this->modal->medium('plus', t('Add a new action'), 'ActionCreationController', 'create', array('project_id' => $project['id'])) ?>
+            </span>
         </li>
         <li class="">
+            <span class="import-action-btn">
             <?= $this->modal->medium('copy', t('Import from another project'), 'ProjectActionDuplicationController', 'show', array('project_id' => $project['id'])) ?>
+            </span>
         </li>
     </ul>
 </div>
