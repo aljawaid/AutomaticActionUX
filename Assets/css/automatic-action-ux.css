@@ -258,3 +258,15 @@ ul#BoardViews li:last-of-type {
 .action-options svg {
     vertical-align: bottom;
 }
+
+.action-details li {
+    list-style-position: inside;
+}
+
+.action-event-name {
+    list-style-type: disclosure-closed;
+}
+
+.action-options-value {
+    list-style: square;
+}

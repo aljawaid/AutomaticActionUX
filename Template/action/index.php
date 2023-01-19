@@ -348,7 +348,7 @@
                             <svg width="18px" height="18px" fill="currentColor" viewBox="0 0 32 32" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g id="" stroke-width="0"></g><g id="" stroke-linecap="round" stroke-linejoin="round"></g><g id=""> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <line class="st0" x1="17" y1="5" x2="29" y2="5"></line> <line class="st0" x1="17" y1="9" x2="24" y2="9"></line> <line class="st0" x1="17" y1="21" x2="29" y2="21"></line> <line class="st0" x1="17" y1="25" x2="24" y2="25"></line> <circle class="st0" cx="8" cy="8" r="5"></circle> <circle class="st0" cx="8" cy="24" r="5"></circle> <circle class="st0" cx="8" cy="8" r="1"></circle> </g></svg> <?= t('Selected Options') ?>
                         </span>
                         <?php foreach ($action['params'] as $param_name => $param_value): ?>
-                            <li class="">
+                            <li class="action-options-value">
                                 <?php if (isset($available_params[$action['action_name']][$param_name]) && is_array($available_params[$action['action_name']][$param_name])): ?>
                                     <?php if ($param_name == 'send_to'): ?>
                                         <?= t('Email Recipient(s)') ?> =
