@@ -25,7 +25,6 @@ return array(
   //
   // action/index.php
   //
-  'Automatic Actions for Project' => '',
   'Total' => '',
   'Add a new action' => '',
   'Import from another project' => '',
