@@ -260,6 +260,11 @@ ul#BoardViews li:last-of-type {
     border-top-right-radius: var(--border-radius-aa) !important;
     border-bottom-right-radius: var(--border-radius-aa) !important;
 }
+
+.add-action-btn a > i {
+    transition: unset;
+}
+
 /* END OF FIX */
 /* ******************* */
 
