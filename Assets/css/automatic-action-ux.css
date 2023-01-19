@@ -32,6 +32,13 @@
 #ActionPageHeader h2 {
     padding-bottom: 5px;
     margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#ActionPageHeader {
+    font-size: small;
+}
+
 h2 > svg.aa-icon {
     color: var(--pp-orangered);
     vertical-align: sub;
