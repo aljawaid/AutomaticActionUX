@@ -7,12 +7,14 @@
     --pp-red-alt: #DA004C;
     --pp-red-alt-2: #AE003D;
     --pp-black: #000000;
+    --pp-light-grey: #8F8F8F;
     --pp-grey: #4D4D4D;
     --pp-white: #FFFFFF;
     --pp-green: #2EA02E;
+    --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
-    --red-icon-faded: #b71234a1;
     --border-radius: 3px;
+    --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --button-blue-border-gradient-match: #476E9E;
     --link-hover-red: #AE003D;
