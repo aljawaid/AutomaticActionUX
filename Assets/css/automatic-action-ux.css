@@ -13,7 +13,6 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
-    --border-radius: 3px;
     --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --button-blue-border-gradient-match: #476E9E;
@@ -21,6 +20,7 @@
     --link-hover-white: #EEEEEE;
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow-aa: 1px 1px 1px 0px #000;
+    --border-radius-aa: 3px;
 }
 
 .page #main section #ActionPageHeader {
@@ -37,7 +37,7 @@
     border: 2px outset var(--button-blue-border-gradient-match);
     text-align: center;
     padding: 2px 0 2px 6px !important;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-aa);
     margin-right: 15px;
     cursor: context-menu;
 }
@@ -45,10 +45,10 @@
 #ActionTable {
     border-collapse: unset;
     border: 2px outset var(--button-blue-border-gradient-match);
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius-aa);
+    border-top-right-radius: var(--border-radius-aa);
+    border-bottom-right-radius: var(--border-radius-aa);
+    border-bottom-left-radius: var(--border-radius-aa);
 }
 
 table#ActionTable > tbody > tr > th.cell-bg {
@@ -177,7 +177,7 @@ table#ActionTable > tbody > tr > td {
     padding: 0 1px 1px 3px !important;
     margin-right: 3px;
     display: inline;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-aa);
     cursor: context-menu;
 }
 
@@ -189,13 +189,13 @@ table#ActionTable > tbody > tr > td {
 /* ******************* */
 /* FIX FOR KANBOARDCSS */
 ul#BoardViews li:first-of-type {
-    border-top-left-radius: var(--border-radius) !important;
-    border-bottom-left-radius: var(--border-radius) !important;
+    border-top-left-radius: var(--border-radius-aa) !important;
+    border-bottom-left-radius: var(--border-radius-aa) !important;
 }
 
 ul#BoardViews li:last-of-type {
-    border-top-right-radius: var(--border-radius) !important;
-    border-bottom-right-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius-aa) !important;
+    border-bottom-right-radius: var(--border-radius-aa) !important;
 }
 /* END OF FIX */
 /* ******************* */
