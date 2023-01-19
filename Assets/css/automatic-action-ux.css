@@ -236,7 +236,10 @@ ul#BoardViews li:last-of-type {
     color: var(--pp-green-dark);
     font-weight: 600;
     display: block;
-    margin-top: 5px;
+}
+
+.action-details > span:last-of-type {
+    margin-top: 10px;
 }
 
 .action-event-name span {
