@@ -18,9 +18,9 @@
     	<div class="board-actions-counts">
             <div class="action-page-count" title="<?= t('Actions for this project')?>">
                 <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
-                    <i class="fa fa-magic" aria-hidden="true">&nbsp;</i><?= $this->url->link(count($actions), 'ActionController', 'index', array('project_id' => $project['id']), '', 'board-action-link', t('View all actions for this project')) ?>
+                    <?= $this->url->link(count($actions), 'ActionController', 'index', array('project_id' => $project['id']), '', 'board-action-link', t('View all actions for this project')) ?>
                 <?php else: ?>
-                    <i class="fa fa-magic" aria-hidden="true">&nbsp;</i> <?= count($actions) ?>
+                    <?= count($actions) ?>
                 <?php endif ?>
             </div>
 

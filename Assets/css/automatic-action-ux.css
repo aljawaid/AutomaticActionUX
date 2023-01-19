@@ -57,6 +57,10 @@ h2 > svg.aa-icon {
     margin-left: 0;
     margin-right: 0;
 }
+
+.data-bar li span {
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .action-page-count {
