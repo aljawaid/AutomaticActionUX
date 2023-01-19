@@ -68,6 +68,9 @@
             </tr>
         </thead>
         <tbody>
+            <style type="text/css">
+                ul.dropdown-submenu-open {min-width: unset;}
+            </style>
             <?php 
             //set counter variable for line number
             $counter = 1;
