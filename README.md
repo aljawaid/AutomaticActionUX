@@ -45,7 +45,7 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory)
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
 #### Core Files & Templates
 - `01` Template override
 - _No database changes_
