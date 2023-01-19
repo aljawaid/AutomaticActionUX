@@ -59,9 +59,18 @@ h2 > svg.aa-icon {
     margin-right: 0;
 }
 
-.data-bar li span {
+.data-bar {
+    width: 100%;
+}
+
+.data-bar li .page-count-total {
     font-size: 1em;
     text-transform: uppercase;
+}
+
+.data-bar li.float-right {
+    padding-right: 0;
+    margin-left: 15px;
 }
 
 .action-page-count {
@@ -100,6 +109,11 @@ h2 > svg.aa-icon {
 .add-action-btn:hover {
     background-color: var(--pp-white);
 }
+
+.p-right-5i {
+    padding-right: 5px !important;
+}
+
 #ActionTable {
     border-collapse: unset;
     border: 2px outset var(--button-blue-border-gradient-match);

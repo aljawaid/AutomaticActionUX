@@ -41,7 +41,7 @@
         $systemTriggerCounterZero = '0';
         ?>
 
-        <li class="action-page-count" title="<?= t('System Triggered Actions')?>">
+        <li class="action-page-count p-right-5i" title="<?= t('System Triggered Actions')?>">
             <i class="fa fa-cog" aria-hidden="true">&nbsp;</i> 
 
             <?php if ($systemTriggerCounter > 0): ?>
@@ -51,12 +51,12 @@
             <?php endif ?>
 
         </li>
-        <li class="">
+        <li class="float-right">
             <span class="add-action-btn">
                 <?= $this->modal->medium('plus', t('Add a new action'), 'ActionCreationController', 'create', array('project_id' => $project['id'])) ?>
             </span>
         </li>
-        <li class="">
+        <li class="float-right">
             <span class="import-action-btn">
             <?= $this->modal->medium('copy', t('Import from another project'), 'ProjectActionDuplicationController', 'show', array('project_id' => $project['id'])) ?>
             </span>
