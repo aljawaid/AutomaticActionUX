@@ -1,4 +1,4 @@
-# AutomaticActionUX
+<h2><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h2>
 
 This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.
 
