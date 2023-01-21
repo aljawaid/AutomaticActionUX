@@ -326,6 +326,7 @@ ul#BoardViews li:last-of-type {
 
 .action-details .action-options {
     display: block;
+    margin-bottom: 5px;
 }
 
 .action-details .action-event-name {
@@ -345,6 +346,10 @@ ul#BoardViews li:last-of-type {
     text-transform: uppercase;
     color: var(--pp-light-grey);
     font-weight: 600;
+}
+
+.action-event-value {
+    font-style: italic;
 }
 
 .action-event-title svg, .action-options svg {
