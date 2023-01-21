@@ -408,15 +408,15 @@
                                     <?= $this->text->in($param_value, $swimlane_list) ?>
                                 <?php elseif ($this->text->contains($param_name, 'check_box_include_') || $this->text->contains($param_name, 'check_box_all_columns')): ?>
                                     <?php if ($param_value == '1'): ?>
-                                        <?= t('Yes') ?>
+                                        <span class="options-checked">&#10004;</span> <?= t('Yes') ?>
                                     <?php else: ?>
-                                        <?= t('No') ?>
+                                        <span class="options-checked">&#10008;</span> <?= t('No') ?>
                                     <?php endif ?>
                                 <?php elseif ($this->text->contains($param_name, 'check_box_no_duplicates')): ?>
                                     <?php if ($param_value == '1'): ?>
-                                        <?= t('Checked') ?>
+                                        <span class="options-checked">&#10004;</span> <?= t('Checked') ?>
                                     <?php else: ?>
-                                        <?= t('Not Checked') ?>
+                                        <span class="options-checked">&#10008;</span> <?= t('Not Checked') ?>
                                     <?php endif ?>
                                 <?php elseif ($this->text->contains($param_name, 'email_subject')): ?>
                                     <?php if ($param_value == null): ?>
