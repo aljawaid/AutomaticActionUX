@@ -406,11 +406,17 @@
                                     <?= $this->text->in($param_value, $links_list) ?>
                                 <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
                                     <?= $this->text->in($param_value, $swimlane_list) ?>
-                                <?php elseif ($this->text->contains($param_name, 'check_box_include_')): ?>
+                                <?php elseif ($this->text->contains($param_name, 'check_box_include_') || $this->text->contains($param_name, 'check_box_all_columns')): ?>
                                     <?php if ($param_value == '1'): ?>
                                         <?= t('Yes') ?>
                                     <?php else: ?>
                                         <?= t('No') ?>
+                                    <?php endif ?>
+                                <?php elseif ($this->text->contains($param_name, 'check_box_no_duplicates')): ?>
+                                    <?php if ($param_value == '1'): ?>
+                                        <?= t('Checked') ?>
+                                    <?php else: ?>
+                                        <?= t('Not Checked') ?>
                                     <?php endif ?>
                                 <?php elseif ($this->text->contains($param_name, 'email_subject')): ?>
                                     <?php if ($param_value == null): ?>
