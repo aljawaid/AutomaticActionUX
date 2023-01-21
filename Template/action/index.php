@@ -384,12 +384,12 @@
                             <li class="action-options-value">
                                 <?php if (isset($available_params[$action['action_name']][$param_name]) && is_array($available_params[$action['action_name']][$param_name])): ?>
                                     <?php if ($param_name == 'send_to'): ?>
-                                        <?= t('Email Recipient(s)') ?> =
+                                        <?= t('Email Recipient(s)') ?> <span class="options-arrow">&#10609;</span>
                                     <?php else: ?>
-                                        <?= $this->text->e(ucfirst($param_name)) ?> =
+                                        <?= $this->text->e(ucfirst($param_name)) ?> <span class="options-arrow">&#10609;</span>
                                     <?php endif ?>
                                 <?php else: ?>
-                                    <?= $this->text->in($param_name, $available_params[$action['action_name']]) ?> =
+                                    <?= $this->text->in($param_name, $available_params[$action['action_name']]) ?> <span class="options-arrow">&#10609;</span>
                                 <?php endif ?>
 
                                 <?php if ($this->text->contains($param_name, 'column_id')): ?>

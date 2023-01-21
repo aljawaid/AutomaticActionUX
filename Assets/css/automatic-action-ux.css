@@ -372,3 +372,12 @@ ul#BoardViews li:last-of-type {
 .action-event-name::marker, .action-options-value::marker {
     color: var(--pp-green-dark);
 }
+
+.options-arrow {
+    font-size: 2em;
+    vertical-align: middle;
+    color: var(--pp-green-dark);
+    line-height: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
