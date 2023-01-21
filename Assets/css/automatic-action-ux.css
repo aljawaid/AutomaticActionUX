@@ -314,18 +314,37 @@ ul#BoardViews li:last-of-type {
     margin: auto 5px;
 }
 
-.action-details > span {
+.action-details > span, .action-details > li > span.action-event-title {
     color: var(--pp-green-dark);
     font-weight: 600;
+}
+
+.action-details .action-event-title {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.action-details .action-options {
     display: block;
 }
 
-.action-details > span:last-of-type {
-    margin-top: 10px;
+.action-details .action-event-name {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
 }
 
-.action-event-name span {
-    font-style: italic;
+.action-details hr {
+    border-width: 1px;
+    border-color: var(--pp-grey);
+    border-radius: 2px;
+}
+
+.action-event-label {
+    float: right;
+    text-transform: uppercase;
+    color: var(--pp-light-grey);
+    font-weight: 600;
 }
 
 .action-event-title svg, .action-options svg {
@@ -339,14 +358,6 @@ ul#BoardViews li:last-of-type {
 
 .action-options svg {
     vertical-align: bottom;
-}
-
-.action-details li {
-    list-style-position: inside;
-}
-
-.action-event-name {
-    list-style-type: disclosure-closed;
 }
 
 .action-options-value {

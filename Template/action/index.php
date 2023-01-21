@@ -369,12 +369,14 @@
                         <p class="alert alert-error"><?= t('Automatic Action not found: "%s"', $action['action_name']) ?></p>
                     <?php else: ?>
                     <ul class="action-details">
+                        <li class="action-event-name">
                         <span class="action-event-title">
                             <svg width="18px" height="18px" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="" stroke-width="0"></g><g id="" stroke-linecap="round" stroke-linejoin="round"></g><g id=""><path d="M15.5 31.062c-6.904 0-12.5-5.597-12.5-12.5 0-5.315 3.323-9.844 8-11.651v4.449c-2.399 1.503-4 4.162-4 7.202 0 4.694 3.806 8.5 8.5 8.5s8.5-3.806 8.5-8.5c0-2.596-1.166-4.915-3-6.475v-4.736c4.143 2.036 7 6.284 7 11.212 0 6.903-5.597 12.499-12.5 12.499zM16 17.062c-1.104 0-2-0.896-2-2v-11.124c0-1.104 0.896-2 2-2s2 0.896 2 2v11.125c0 1.104-0.896 1.999-2 1.999z"></path> </g></svg> <?= t('Action Trigger') ?>
                         </span>
-                        <li class="action-event-name">
-                            <?= t('Event Name') ?> = <span class=""><?= $this->text->in($action['event_name'], $available_events) ?></span>
+                            <span class="action-event-value"><?= $this->text->in($action['event_name'], $available_events) ?></span>
+                            <span class="action-event-label"><?= t('Event Name') ?></span>
                         </li>
+                        <hr>
                         <span class="action-options">
                             <svg width="18px" height="18px" fill="currentColor" viewBox="0 0 32 32" version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g id="" stroke-width="0"></g><g id="" stroke-linecap="round" stroke-linejoin="round"></g><g id=""> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <line class="st0" x1="17" y1="5" x2="29" y2="5"></line> <line class="st0" x1="17" y1="9" x2="24" y2="9"></line> <line class="st0" x1="17" y1="21" x2="29" y2="21"></line> <line class="st0" x1="17" y1="25" x2="24" y2="25"></line> <circle class="st0" cx="8" cy="8" r="5"></circle> <circle class="st0" cx="8" cy="24" r="5"></circle> <circle class="st0" cx="8" cy="8" r="1"></circle> </g></svg> <?= t('Selected Options') ?>
                         </span>
@@ -427,13 +429,13 @@
                                     <?php elseif ($param_value == 'both'): ?>
                                         <?= t('Task Assignee & Task Creator') ?>
                                     <?php elseif ($param_value == 'assignee_project_email'): ?>
-                                        <?= t('Task Assignee & Project Email Address') ?>
+                                        <?= t('Task Assignee & Project Email Address') ?> <pre><?= $project['email'] ?></pre>
                                     <?php elseif ($param_value == 'creator_project_email'): ?>
                                         <?= t('Task Creator & Project Email Address') ?>
                                     <?php elseif ($param_value == 'project_email'): ?>
-                                        <?= t('Project Email Address') ?>
+                                        <?= t('Project Email Address') ?>  <pre><?= $project['email'] ?></pre>
                                     <?php elseif ($param_value == 'all'): ?>
-                                        <?= t('Task Assignee, Task Creator & Project Email Address') ?>
+                                        <?= t('Task Assignee, Task Creator & Project Email Address') ?>  <pre><?= $project['email'] ?></pre>
                                     <?php endif ?>
                                 <?php else: ?>
                                     <?= $this->text->e($param_value) ?>
