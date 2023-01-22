@@ -308,6 +308,7 @@ ul#BoardViews li:last-of-type {
     margin: 0;
     font-weight: normal;
     font-size: .875em;
+    float: right;
 }
 
 .action-details {
