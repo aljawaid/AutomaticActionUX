@@ -406,6 +406,15 @@
                                     <?= $this->text->in($param_value, $links_list) ?>
                                 <?php elseif ($this->text->contains($param_name, 'swimlane_id')): ?>
                                     <?= $this->text->in($param_value, $swimlane_list) ?>
+                                <?php elseif ($this->text->contains($param_name, 'check_box_include_identifier')): ?>
+                                    <?php if (($param_value == '1') && ($project['identifier'] == null)): ?>
+                                        <span class="options-checked">&#10004;</span> <?= t('Yes') ?>
+                                        <div class="form-warning">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <?= t('Project Identifier is not set') ?>
+                                        </div>
+                                    <?php else: ?>
+                                        <span class="options-checked">&#10004;</span> <?= t('Yes') ?>
+                                    <?php endif ?>
                                 <?php elseif ($this->text->contains($param_name, 'check_box_include_') || $this->text->contains($param_name, 'check_box_all_columns')): ?>
                                     <?php if ($param_value == '1'): ?>
                                         <span class="options-checked">&#10004;</span> <?= t('Yes') ?>
