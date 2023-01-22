@@ -92,4 +92,5 @@ return array(
   'Default Subject: Activity Report' => 'Default Subject: Activity Report',
   'The default subject will be used' => 'The default subject will be used',
   'Project Email Address is not set' => 'Project Email Address is not set',
+  'Project Identifier is not set' => 'Project Identifier is not set',
 );

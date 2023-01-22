@@ -92,4 +92,5 @@ return array(
   'Default Subject: Activity Report' => 'Standardbetreff: Aktivitätsbericht',
   'The default subject will be used' => 'Der Standardbetreff wird verwendet',
   'Project Email Address is not set' => 'Projekt E-Mail Adresse ist nicht festgelegt',
+  'Project Identifier is not set' => 'Projektkennung ist nicht festgelegt',
 );
