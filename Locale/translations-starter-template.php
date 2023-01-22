@@ -91,4 +91,5 @@ return array(
   'Not set' => '',
   'Default Subject: Activity Report' => '',
   'The default subject will be used' => '',
+  'Project Email Address is not set' => '',
 );
