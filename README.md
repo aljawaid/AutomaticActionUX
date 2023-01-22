@@ -9,7 +9,7 @@ Features
 -------------
 
 - Simplified and revamped the Automatic Actions page in `Project Settings`
-- Added icons for better user experience
+- Added icons and error messages for better user experience
 - Display Action IDs
 - Converted existing core layout to a better table
 - Display total actions for the project
@@ -32,6 +32,9 @@ Screenshots
 
 ![Project Dropdown Menu](../master/screenshot-dropdown.png "Project Dropdown Menu")
 
+**Error Messages**  
+
+![Error Messages](../master/screenshot-error-messages.png "Error Messages")
 
 Usage
 -------------
