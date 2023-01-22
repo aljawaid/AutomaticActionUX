@@ -386,3 +386,9 @@ ul#BoardViews li:last-of-type {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.action-color-value {
+    border: 1px solid;
+    padding: 1px 4px;
+    border-radius: var(--border-radius-aa);
+}

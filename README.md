@@ -36,6 +36,10 @@ Screenshots
 
 ![Error Messages](../master/screenshot-error-messages.png "Error Messages")
 
+**Colored Options**  _- compatible with [ColorManager](https://github.com/aljawaid/ColorManager)_
+
+![Colored Options](../master/screenshot-colored-options.png "Colored Options")
+
 Usage
 -------------
 
@@ -48,7 +52,7 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [AutoSubtasks](https://github.com/creecros/AutoSubtasks)
+- Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [AutoSubtasks](https://github.com/creecros/AutoSubtasks), [ColorManager](https://github.com/aljawaid/ColorManager)
 #### Core Files & Templates
 - `01` Template override
 - _No database changes_

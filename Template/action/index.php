@@ -399,7 +399,7 @@
                                 <?php elseif ($this->text->contains($param_name, 'project_id')): ?>
                                     <?= $this->text->in($param_value, $projects_list) ?>
                                 <?php elseif ($this->text->contains($param_name, 'color_id')): ?>
-                                    <?= $this->text->in($param_value, $colors_list) ?>
+                                    <span class="action-color-value action-color-<?= (strtolower(str_replace(' ', '_', $this->text->in($param_value, $colors_list)))) ?>"><?= $this->text->in($param_value, $colors_list) ?></span>
                                 <?php elseif ($this->text->contains($param_name, 'category_id')): ?>
                                     <?= $this->text->in($param_value, $categories_list) ?>
                                 <?php elseif ($this->text->contains($param_name, 'link_id')): ?>
