@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.5
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- NEW: Display Actual Colors and Compatibility with ColorManager - Improve Action Details Layout #14
+- NEW: Show Message if Project Identifier is Set by Action But Not Configured in Project - Improve Action Details Layout #14
+- NEW: Show Message if Project Email Address is Set by Action But Not Configured in Project - Improve Action Details Layout #14
+- NEW: Add visual icons for ticks and checkmarks - Improve Action Details Layout #14
+- NEW: Add Compatibility for AutoSubtasks Plugin - @creecros - Improve Action Details Layout #14
+
+
 ## v2.0
 
 ### What's Changed
