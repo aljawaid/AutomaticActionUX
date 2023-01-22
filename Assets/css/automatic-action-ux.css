@@ -303,12 +303,16 @@ ul#BoardViews li:last-of-type {
     margin-right: 10px;
 }
 
-.form-help-not-set {
+.form-help-not-set, .form-warning {
     display: inline-block;
     margin: 0;
     font-weight: normal;
     font-size: .875em;
     float: right;
+}
+
+.form-warning {
+    color: var(--pp-red-alt-2);
 }
 
 .action-details {

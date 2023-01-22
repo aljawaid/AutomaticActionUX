@@ -435,13 +435,33 @@
                                     <?php elseif ($param_value == 'both'): ?>
                                         <?= t('Task Assignee & Task Creator') ?>
                                     <?php elseif ($param_value == 'assignee_project_email'): ?>
-                                        <?= t('Task Assignee & Project Email Address') ?> <pre><?= $project['email'] ?></pre>
+                                        <?= t('Task Assignee & Project Email Address') ?>
+                                        <?php if ($project['email'] == null): ?>
+                                            <div class="form-warning">
+                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <?= t('Project Email Address is not set') ?>
+                                            </div>
+                                        <?php endif ?>
                                     <?php elseif ($param_value == 'creator_project_email'): ?>
                                         <?= t('Task Creator & Project Email Address') ?>
+                                        <?php if ($project['email'] == null): ?>
+                                            <div class="form-warning">
+                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <?= t('Project Email Address is not set') ?>
+                                            </div>
+                                        <?php endif ?>
                                     <?php elseif ($param_value == 'project_email'): ?>
-                                        <?= t('Project Email Address') ?>  <pre><?= $project['email'] ?></pre>
+                                        <?= t('Project Email Address') ?>
+                                        <?php if ($project['email'] == null): ?>
+                                            <div class="form-warning">
+                                                <?= t('Project Email Address is not set') ?>
+                                            </div>
+                                        <?php endif ?>
                                     <?php elseif ($param_value == 'all'): ?>
-                                        <?= t('Task Assignee, Task Creator & Project Email Address') ?>  <pre><?= $project['email'] ?></pre>
+                                        <?= t('Task Assignee, Task Creator & Project Email Address') ?>
+                                        <?php if ($project['email'] == null): ?>
+                                            <div class="form-warning">
+                                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <?= t('Project Email Address is not set') ?>
+                                            </div>
+                                        <?php endif ?>
                                     <?php endif ?>
                                 <?php else: ?>
                                     <?= $this->text->e($param_value) ?>
