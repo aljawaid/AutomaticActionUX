@@ -130,5 +130,6 @@ _(most recent changes are listed on top):_
 - Fixed ReadmeIncorrect links
 - NEW: Add Readme
 
+---
 
 Read the full [**Changelog**](../master/changelog.md "See changes") or view the [**README**](../master/README.md "View README")
