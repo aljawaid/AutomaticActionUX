@@ -1,5 +1,4 @@
-<span name="readme-top"></span>
-<h2><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h2>
+<h2 name="readme-top"><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h2>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/AutomaticActionUX/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
