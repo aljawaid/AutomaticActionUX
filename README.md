@@ -1,10 +1,10 @@
+<span name="readme-top"></span>
 <h2><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h2>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/AutomaticActionUX/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.
 
-<a name="readme-top"></a>
 <p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>]</p>
 
 ## Features
