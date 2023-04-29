@@ -1,9 +1,11 @@
+<a name="readme-top"></a>
 <h2><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h2>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/AutomaticActionUX/total?style=for-the-badge "GitHub All Downloads") - **_A Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -19,6 +21,7 @@ This plugin gives the Automatic Action interface a complete makeover to make it 
   - Show totals even if zero
   - Do not show on Project Automatic Actions Listing page
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -38,10 +41,13 @@ This plugin gives the Automatic Action interface a complete makeover to make it 
 
 ![Colored Options](../master/screenshot-colored-options.png "Colored Options")
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
 Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
+
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -72,6 +78,7 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 
 </details>
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -81,7 +88,10 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 - [Thojo0](https://github.com/thojo0) - Contributor
 - _Contributors welcome_
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read the MIT license")
+<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
+<a name="readme-bottom"></a>
