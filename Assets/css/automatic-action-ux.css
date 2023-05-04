@@ -19,8 +19,8 @@
     --button-blue-border-gradient-match: #476E9E;
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
-    --pp-blue-box: rgba(0, 122, 201, 0.6);
-    --box-shadow-aa: 1px 1px 1px 0px #000;
+    --pp-blue-box: rgba(0, 122, 201, .6);
+    --box-shadow-aa: 1px 1px 1px 0px #000000;
     --border-radius-aa: 3px;
     --transition-aa: ease-in-out all .3s;
 }
@@ -143,12 +143,10 @@ table#ActionTable > tbody > tr > td {
 }
 
 #ActionTable > thead {
-    /*border: 2px outset var(--button-blue-border-gradient-match);*/
     border-bottom: 0;
 }
 
 #ActionTable > tbody > tr > th, #ActionTable > tbody > tr > td, #ActionTable > thead > tr > th {
-    /*border: 1px solid var(--button-blue-border-gradient-match);*/
     border-bottom: 0;
 }
 
@@ -211,7 +209,6 @@ table#ActionTable > tbody > tr > td {
     text-transform: uppercase;
 }
 
-
 .action-relation {
     vertical-align: middle;
     font-size: 2em;
@@ -239,7 +236,6 @@ table#ActionTable > tbody > tr > td {
 }
 
 #BoardActions {
-    /*display: inline-block;*/
     padding-right: 5px;
 }
 
@@ -362,7 +358,7 @@ ul#BoardViews li:last-of-type {
     width: 18px;
 }
 
-.action-event-title svg{
+.action-event-title svg {
     vertical-align: text-top;
 }
 
