@@ -1,4 +1,4 @@
-<h1 name="readme-top"><img src="/Assets/aa-icon.svg" style="width:24px; height: 24px; display: inline-block;"/> AutomaticActionUX</h1>
+<h1 name="user-content-readme-top">AutomaticActionUX</h1>
 <p align="center">
     <a href="https://github.com/aljawaid/AutomaticActionUX/releases">
         <img src="https://img.shields.io/github/v/release/aljawaid/AutomaticActionUX?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -33,7 +33,7 @@
 
 This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -49,7 +49,7 @@ This plugin gives the Automatic Action interface a complete makeover to make it 
   - Show totals even if zero
   - Do not show on Project Automatic Actions Listing page
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -69,13 +69,13 @@ This plugin gives the Automatic Action interface a complete makeover to make it 
 
 ![Colored Options](../master/screenshot-colored-options.png "Colored Options")
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
 Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -106,7 +106,7 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -116,7 +116,7 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 - [Thojo0](https://github.com/thojo0) - Contributor
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
@@ -124,7 +124,7 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 
 ---
 
-<h3 align="center">
+<p align="center">
     <a href="https://github.com/aljawaid/AutomaticActionUX/stargazers" title="View Stargazers">
         <img src="https://img.shields.io/github/stars/aljawaid/AutomaticActionUX?logo=github&style=flat-square" alt="AutomaticActionUX">
     </a>
@@ -146,6 +146,6 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
     <a href="https://github.com/aljawaid/AutomaticActionUX/compare/" title="Latest Commits">
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/AutomaticActionUX/latest?style=flat-square">
     </a>
-</h3>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
-<a name="readme-bottom"></a>
+</p>
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
+<a name="user-content-readme-bottom"></a>
