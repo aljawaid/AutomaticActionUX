@@ -3,8 +3,6 @@
 
 ## v2.5
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - NEW: Display Actual Colors and Compatibility with ColorManager - Improve Action Details Layout #14
 - NEW: Show Message if Project Identifier is Set by Action But Not Configured in Project - Improve Action Details Layout #14
@@ -14,8 +12,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - FIX: KanboardCSS Transition Compatibility
@@ -58,16 +54,12 @@ _(most recent changes are listed on top):_
 
 ## v1.9
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - Move Mini Bar to Dropdown Menu
 - General code cleanup and improvements
 
 
 ## v1.8
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Add PluginManager to README.md
@@ -79,8 +71,6 @@ _(most recent changes are listed on top):_
 
 ## v1.7
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - Change License to MIT
 - FIX: Missing Translation String
@@ -89,15 +79,11 @@ _(most recent changes are listed on top):_
 
 ## v1.6
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - NEW: Added German Translations (formal and informal)
 
 
 ## v1.5
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Update README- More in line with KSP
@@ -119,8 +105,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Plugin Files
