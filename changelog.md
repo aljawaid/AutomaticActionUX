@@ -4,7 +4,7 @@
 ## v2.5
 
 _(most recent changes are listed on top):_
-- NEW: Display Actual Colors and Compatibility with ColorManager - Improve Action Details Layout #14
+- NEW: Display Actual Colors and Compatibility with ColorManager - improve Action Details Layout #14
 - NEW: Show Message if Project Identifier is Set by Action But Not Configured in Project - Improve Action Details Layout #14
 - NEW: Show Message if Project Email Address is Set by Action But Not Configured in Project - Improve Action Details Layout #14
 - NEW: Add visual icons for ticks and checkmarks - Improve Action Details Layout #14
@@ -20,7 +20,7 @@ _(most recent changes are listed on top):_
 - FIX: Remove Unnecessary Translation String
 - FIX: Use Total Word Instead of Duplicate Icon - wording makes the flow more universal
 - FIX: Title Font Sizing
-- NEW: Add Unique Icon- Replace `fa-magic` with a better `svg` one
+- NEW: Add Unique Icon - Replace `fa-magic` with a better `svg` one
 - Add colour to bullets
 - FIX: Dropdown Menu Width - inline CSS used to remain specific to dropdown on page only, not elsewhere
 - FIX: Bullet Style and Position for Action Details
@@ -66,7 +66,7 @@ _(most recent changes are listed on top):_
 - Prepare 2023
 - FIX: Box Shadow Variable
 - FIX: CSS Borders
-- FIX: Table Cell Border Conflict- CSS Conflicting with Plugin Manager
+- FIX: Table Cell Border Conflict - CSS Conflicting with Plugin Manager
 
 
 ## v1.7
@@ -88,19 +88,17 @@ _(most recent changes are listed on top):_
 _(most recent changes are listed on top):_
 - Update README- More in line with KSP
 - FIX: Missing Translations
-- Cleanup Plugin Code- More in line with KSP
-- Rename CSS file - Make it in line with KanboardSkeletonPlugin style
-- FIX: #2 Counting Cronjobs Seems Incorrect
-- Fixes #2 as suggested by @creecros
+- Cleanup Plugin Code - more in line with KSP
+- Rename CSS file - make it in line with KanboardSkeletonPlugin style
+- FIX: #2 Counting Cronjobs Seems Incorrect - fixes #2 as suggested by @creecros
 - FIX: Rename Release version filename
 - NEW: Add Action Data in Board View
   - Add total actions (with user/system splits) relevant to project
   - Show totals as a separate mini bar
   - Show totals even if zero
-  - do not show on Project Actions Listing page
+  - Do not show on Project Actions Listing page
   - Adjust styling for mini bar
-- FIX: System Action counter when zero actions by cronjobs
-  - Will show zero instead of just icon
+- FIX: System Action counter when zero actions by cronjobs - will show zero instead of just icon
 - UPDATE: Language strings
 
 
@@ -111,7 +109,7 @@ _(most recent changes are listed on top):_
 - Cleanup code
 - Added english translations
 - Added css and changelog
-- Fixed ReadmeIncorrect links
+- Fixed Readme - Incorrect links
 - NEW: Add Readme
 
 ---
