@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v2.6
+
+_(most recent changes are listed on top):_
+- FIX: Code Structure
+- FIX: Move Icon - exclude from release package
+- FIX: Code Syntax - `actions.php`
+- FIX: Code Syntax - `index.php`
+- FIX: CSS Code Syntax
+- FIX: Markdown Code Syntax & Line Endings - `changelog.md`
+- NEW: Add Code Scanning Badges to README.md
+- FIX: README Navigation Links for GitHub
+- FIX: Code Syntax
+- FIX: Markdown Code Syntax
+- FIX: Code Syntax, Line Endings & Spaces
+- FIX: Line Endings & Spaces
+- NEW: Add Footer Badges to README.md
+- NEW: Add Section Navigation Links to README.md
+- NEW: Add Badges to README.md
+- Update README.md
+- FIX: Add README Page Navigation Links
+- FIX: Content Flow for README.md
+- Create INSTALL.md
+
+
 ## v2.5
 
 _(most recent changes are listed on top):_
