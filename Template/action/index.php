@@ -18,7 +18,7 @@
             <span class="page-count-total"><?= t('Total') ?>:</span> <strong><?= count($actions) ?></strong>
         </li>
         
-        <?php 
+        <?php
             //set counter variable for actions trigger count
             $userTriggerCounter = 0;
             $systemTriggerCounter = 0;
@@ -83,7 +83,7 @@
             <style type="text/css">
                 ul.dropdown-submenu-open {min-width: unset;}
             </style>
-            <?php 
+            <?php
             //set counter variable for line number
             $counter = 1;
             ?>
@@ -323,10 +323,10 @@
                     <?php endif ?>
                 </td>
 
-            <?php $counter++; ?>
+                <?php $counter++; ?>
                 
                 <th class="cell-bg">
-                    <?php if (! isset($available_params[$action['action_name']])): ?>
+                    <?php if (!isset($available_params[$action['action_name']])): ?>
                         <svg version="1.1" class="aa-icon" width="20px" height="20px" fill="currentColor" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g stroke-width="0"></g>
                             <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -365,7 +365,7 @@
             </tr>
             <tr class="action-table-row">
                 <td class="bl-0">
-                    <?php if (! isset($available_params[$action['action_name']])): ?>
+                    <?php if (!isset($available_params[$action['action_name']])): ?>
                         <p class="alert alert-error"><?= t('Automatic Action not found: "%s"', $action['action_name']) ?></p>
                     <?php else: ?>
                     <ul class="action-details">
