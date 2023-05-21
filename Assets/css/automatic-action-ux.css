@@ -15,12 +15,12 @@
     --pp-orange: #FF6500;
     --pp-orangered: #FF4500;
     --blue-icon-dark: #034CA6;
-    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --button-blue-border-gradient-match: #476E9E;
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
     --pp-blue-box: rgba(0, 122, 201, .6);
-    --box-shadow-aa: 1px 1px 1px 0px #000000;
+    --box-shadow-aa: 1px 1px 1px 0 #000000;
     --border-radius-aa: 3px;
     --transition-aa: ease-in-out all .3s;
 }
@@ -117,25 +117,16 @@ h2 > svg.aa-icon {
 #ActionTable {
     border-collapse: unset;
     border: 2px outset var(--button-blue-border-gradient-match);
-    border-top-left-radius: var(--border-radius-aa);
-    border-top-right-radius: var(--border-radius-aa);
-    border-bottom-right-radius: var(--border-radius-aa);
-    border-bottom-left-radius: var(--border-radius-aa);
+    border-radius: var(--border-radius-aa);
 }
 
 table#ActionTable > tbody > tr > th.cell-bg {
     background-color: var(--alert-background-color-info);
-    padding-right: 3px;
-    padding-left: 5px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 3px 4px 5px;
 }
 
 table#ActionTable > tbody > tr > td {
-    padding-right: 3px;
-    padding-left: 5px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 3px 4px 5px;
 }
 
 .cell-bg-title {
@@ -192,6 +183,7 @@ table#ActionTable > tbody > tr > td {
     font-size: small;
     text-transform: uppercase;
 }
+
 .action-action {
     vertical-align: middle;
     text-align: center;
@@ -259,7 +251,6 @@ table#ActionTable > tbody > tr > td {
     vertical-align: sub;
 }
 
-/* ******************* */
 /* FIX FOR KANBOARDCSS */
 ul#BoardViews li:first-of-type {
     border-top-left-radius: var(--border-radius-aa) !important;
@@ -276,11 +267,8 @@ ul#BoardViews li:last-of-type {
 }
 
 /* END OF FIX */
-/* ******************* */
 
-.display-none {
-    display: none !important;
-}
+.display-none { display: none; }
 
 .bl-0 {
     border-left: 0 !important;
