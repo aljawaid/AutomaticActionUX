@@ -1,6 +1,9 @@
-<?php $actions = $this->model->actionModel->getAllByProject($project['id']); ?>
-
+<?php
+$actions = $this->model->actionModel->getAllByProject($project['id']);
+// phpcs:disable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore -- code must be kept intact
+?>
 <li id="BoardActions" class="board-actions <?php if ($this->app->checkMenuSelection('ActionController')): ?> display-none <?php endif ?>">
+    <?php // phpcs:enable ?>
     <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
     <a href="<?= $this->url->href('ActionController', 'index', array('project_id' => $project['id']), false, '', '') ?>">
     <?php endif ?>
@@ -15,7 +18,7 @@
                 </g>
             </svg> &nbsp;<?= t('Automatic Actions') ?>
         </div>
-    	<div class="board-actions-counts">
+        <div class="board-actions-counts">
             <div class="action-page-count" title="<?= t('Actions for this project')?>">
                 <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
                     <?= $this->url->link(count($actions), 'ActionController', 'index', array('project_id' => $project['id']), '', 'board-action-link', t('View all actions for this project')) ?>
