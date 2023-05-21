@@ -109,7 +109,7 @@ _(most recent changes are listed on top):_
 - Cleanup code
 - Added english translations
 - Added css and changelog
-- Fixed Readme - Incorrect links
+- Fixed Readme - incorrect links
 - NEW: Add Readme
 
 ---
