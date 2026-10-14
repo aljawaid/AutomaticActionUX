@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify declared Kanboard and PHP compatibility details.
  *

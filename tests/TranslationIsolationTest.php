@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify AutomaticActionUX translation isolation and catalogue completeness.
  *
@@ -12,7 +13,7 @@ $failures = array();
 
 foreach ($localeCodes as $localeCode) {
     $localeFile = $pluginRoot . '/Locale/' . $localeCode . '/translations.php';
-    if (! is_file($localeFile)) {
+    if (!is_file($localeFile)) {
         $failures[] = 'Missing locale catalogue: ' . $localeCode;
         continue;
     }

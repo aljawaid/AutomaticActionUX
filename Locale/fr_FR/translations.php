@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AutomaticActionUX French translations.
  *

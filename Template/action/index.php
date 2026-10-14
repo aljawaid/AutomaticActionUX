@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Present Kanboard 1.2.54 automatic actions with accessible visual summaries.
  *
@@ -178,7 +179,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                     </td>
                     <th class="action-name-cell" scope="row">
                         <i class="fa fa-random aa-icon" aria-hidden="true"></i>
-                        <?php if (! isset($available_params[$action['action_name']])): ?>
+                        <?php if (!isset($available_params[$action['action_name']])): ?>
                             <?= $this->text->e($action['action_name']) ?>
                         <?php else: ?>
                             <?= $this->text->in($action['action_name'], $available_actions) ?>
@@ -206,7 +207,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                 </tr>
                 <tr class="action-table-row">
                     <td class="action-details-cell">
-                        <?php if (! isset($available_params[$action['action_name']])): ?>
+                        <?php if (!isset($available_params[$action['action_name']])): ?>
                             <p class="alert alert-error"><?= t('Automatic Action not found: "%s"', $action['action_name']) ?></p>
                         <?php else: ?>
                             <ul class="action-details">

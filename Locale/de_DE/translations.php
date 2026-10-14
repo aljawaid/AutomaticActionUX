@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AutomaticActionUX formal German translations.
  *

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * AutomaticActionUX translation starter template.
  *

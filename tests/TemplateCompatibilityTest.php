@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify the AutomaticActionUX template contract for Kanboard 1.2.54.
  *
@@ -46,15 +47,17 @@ foreach ($requiredContracts as $contract) {
     }
 }
 
-if (strpos($actionTemplate, "\$paramName === 'check_box_include_identifier'") === false
-    || strpos($actionTemplate, '<span class="options-unchecked"') === false) {
+if (
+    strpos($actionTemplate, "\$paramName === 'check_box_include_identifier'") === false
+    || strpos($actionTemplate, '<span class="options-unchecked"') === false
+) {
     $failures[] = 'The identifier checkbox must render both enabled and disabled states.';
 }
 
 $kanboardRoot = getenv('KANBOARD_ROOT');
 if ($kanboardRoot !== false && $kanboardRoot !== '') {
     $controllerPath = rtrim($kanboardRoot, '/\\') . '/app/Controller/ActionController.php';
-    if (! is_file($controllerPath)) {
+    if (!is_file($controllerPath)) {
         $failures[] = 'KANBOARD_ROOT does not contain ActionController.php.';
     } else {
         $controller = file_get_contents($controllerPath);

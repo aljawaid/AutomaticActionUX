@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify that project action metadata is protected by Kanboard project permissions.
  *
@@ -16,7 +17,7 @@ $listItemPosition = strpos($template, '<li id="BoardActions"');
 
 if ($guardPosition === false || $conditionalPosition === false || $queryPosition === false || $listItemPosition === false) {
     $failures[] = 'The project header permission contract is incomplete.';
-} elseif (! ($guardPosition < $conditionalPosition && $conditionalPosition < $queryPosition && $queryPosition < $listItemPosition)) {
+} elseif (!($guardPosition < $conditionalPosition && $conditionalPosition < $queryPosition && $queryPosition < $listItemPosition)) {
     $failures[] = 'Permission must be checked before action metadata is queried or rendered.';
 }
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify that AutomaticActionUX styling remains scoped, responsive and theme-aware.
  *

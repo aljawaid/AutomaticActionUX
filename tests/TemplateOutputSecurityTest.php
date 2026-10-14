@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Verify escaping and constrained attribute output in the automatic-action template.
  *
