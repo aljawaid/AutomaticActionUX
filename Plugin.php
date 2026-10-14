@@ -8,7 +8,7 @@ use Kanboard\Core\Translator;
 /**
  * Register AutomaticActionUX templates, assets and isolated translations.
  *
- * Related test: tests/TranslationIsolationTest.php.
+ * Related tests: tests/TranslationIsolationTest.php and tests/CompatibilityContractTest.php.
  */
 class Plugin extends Base
 {
@@ -65,7 +65,7 @@ class Plugin extends Base
         // >=1.0.37
         // <1.0.37
         // <=1.0.37
-        return '>=1.2.20';
+        return '>=1.2.54';
     }
 
     public function getPluginHomepage()

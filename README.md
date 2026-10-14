@@ -98,7 +98,8 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Supports PHP `8.2`–`8.5`
 - **Other Plugins & Action Plugins**
   - _No known issues_
   - Compatible with [KanboardEmailHistory](https://github.com/aljawaid/KanboardEmailHistory), [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [AutoSubtasks](https://github.com/creecros/AutoSubtasks), [ColorManager](https://github.com/aljawaid/ColorManager)
@@ -110,7 +111,7 @@ Go to `Project` &#10562; `Configure Project` &#10562; **Automatic Actions**
 <details>
     <summary><strong>Translations</strong></summary>
 
-- English (UK), German (Standard, Formal), German (Standard, Informal)
+- English (US fallback), English (UK), French, German (Standard, Formal), German (Standard, Informal)
 - _Starter template available_
 
 </details>
