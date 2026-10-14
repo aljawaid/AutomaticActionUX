@@ -2,7 +2,7 @@
 /**
  * Present Kanboard 1.2.54 automatic actions with accessible visual summaries.
  *
- * Related tests: tests/TemplateOutputSecurityTest.php and tests/TemplateCompatibilityTest.php.
+ * Related tests: tests/TemplateOutputSecurityTest.php, tests/TemplateCompatibilityTest.php and tests/TranslationIsolationTest.php.
  */
 
 $systemTriggerCount = 0;
@@ -15,40 +15,40 @@ $userTriggerCount = count($actions) - $systemTriggerCount;
 
 // Rules retain recognisable icons for known core and third-party actions while providing safe generic fallbacks.
 $eventPresentationRules = array(
-    array('event' => 'task.cronjob.daily', 'action' => 'NoActivityColumn', 'icon' => 'fa-pause', 'label' => 'No Activity Column'),
-    array('event' => 'task.cronjob.daily', 'action' => 'TaskEmailNoActivity', 'icon' => 'fa-pause', 'label' => 'No Activity Task'),
+    array('event' => 'task.cronjob.daily', 'action' => 'NoActivityColumn', 'icon' => 'fa-pause', 'label' => 'automatic_action_ux.no_activity_column'),
+    array('event' => 'task.cronjob.daily', 'action' => 'TaskEmailNoActivity', 'icon' => 'fa-pause', 'label' => 'automatic_action_ux.no_activity_task'),
     array('event' => 'task.cronjob.daily', 'action' => 'SubTaskEmailDue', 'icon' => 'fa-calendar', 'label' => 'Subtasks'),
-    array('event' => 'task.move.column', 'icon' => 'fa-columns', 'label' => 'Move Column'),
-    array('event' => 'task.create_update', 'icon' => 'fa-sticky-note-o', 'label' => 'Task Create/Edit'),
-    array('event' => 'task.create', 'icon' => 'fa-sticky-note-o', 'label' => 'Task Create'),
-    array('event' => 'task.update', 'icon' => 'fa-pencil-square-o', 'label' => 'Task Update'),
-    array('event' => 'task.move.swimlane', 'icon' => 'fa-exchange', 'label' => 'Move Swimlane'),
-    array('event' => 'task.close', 'icon' => 'fa-check-square-o', 'label' => 'Task Close'),
-    array('event' => 'task.assignee_change', 'icon' => 'fa-user-o', 'label' => 'Assignee Change'),
-    array('event' => 'gitlab.', 'icon' => 'fa-gitlab', 'label' => 'GitLab'),
-    array('event' => 'github.', 'icon' => 'fa-github', 'label' => 'GitHub'),
+    array('event' => 'task.move.column', 'icon' => 'fa-columns', 'label' => 'automatic_action_ux.move_column'),
+    array('event' => 'task.create_update', 'icon' => 'fa-sticky-note-o', 'label' => 'automatic_action_ux.task_create_edit'),
+    array('event' => 'task.create', 'icon' => 'fa-sticky-note-o', 'label' => 'automatic_action_ux.task_create'),
+    array('event' => 'task.update', 'icon' => 'fa-pencil-square-o', 'label' => 'automatic_action_ux.task_update'),
+    array('event' => 'task.move.swimlane', 'icon' => 'fa-exchange', 'label' => 'automatic_action_ux.move_swimlane'),
+    array('event' => 'task.close', 'icon' => 'fa-check-square-o', 'label' => 'automatic_action_ux.task_close'),
+    array('event' => 'task.assignee_change', 'icon' => 'fa-user-o', 'label' => 'automatic_action_ux.assignee_change'),
+    array('event' => 'gitlab.', 'icon' => 'fa-gitlab', 'label' => 'automatic_action_ux.gitlab'),
+    array('event' => 'github.', 'icon' => 'fa-github', 'label' => 'automatic_action_ux.github'),
 );
 
 $actionPresentationRules = array(
-    array('action' => 'CommentCreationMoveTaskColumn', 'icon' => 'fa-commenting-o', 'label' => 'Comment Creation'),
-    array('action' => 'CommentCreation', 'icon' => 'fa-commenting', 'label' => 'Comment Creation'),
-    array('action' => 'TaskAssignColorPriority', 'icon' => 'fa-paint-brush', 'label' => 'Assign Color'),
-    array('action' => 'TaskAssignColorSwimlane', 'icon' => 'fa-paint-brush', 'label' => 'Assign Color'),
-    array('action' => 'TaskAssignColorUser', 'icon' => 'fa-paint-brush', 'label' => 'Assign Color'),
-    array('action' => 'TaskAssignSpecificUser', 'icon' => 'fa-user-o', 'label' => 'Assign User'),
-    array('action' => 'TaskClose', 'icon' => 'fa-check-square-o', 'label' => 'Close Task'),
-    array('action' => 'TaskCreation', 'icon' => 'fa-sticky-note-o', 'label' => 'Create Task'),
-    array('action' => 'TaskEmailNoActivity', 'icon' => 'fa-envelope-o', 'label' => 'Send Email'),
-    array('action' => 'TaskEmail', 'icon' => 'fa-envelope-o', 'label' => 'Send Email'),
-    array('action' => 'TaskMoveSwimlaneAssigned', 'icon' => 'fa-exchange', 'label' => 'Move Swimlane'),
+    array('action' => 'CommentCreationMoveTaskColumn', 'icon' => 'fa-commenting-o', 'label' => 'automatic_action_ux.comment_creation'),
+    array('action' => 'CommentCreation', 'icon' => 'fa-commenting', 'label' => 'automatic_action_ux.comment_creation'),
+    array('action' => 'TaskAssignColorPriority', 'icon' => 'fa-paint-brush', 'label' => 'automatic_action_ux.assign_color'),
+    array('action' => 'TaskAssignColorSwimlane', 'icon' => 'fa-paint-brush', 'label' => 'automatic_action_ux.assign_color'),
+    array('action' => 'TaskAssignColorUser', 'icon' => 'fa-paint-brush', 'label' => 'automatic_action_ux.assign_color'),
+    array('action' => 'TaskAssignSpecificUser', 'icon' => 'fa-user-o', 'label' => 'automatic_action_ux.assign_user'),
+    array('action' => 'TaskClose', 'icon' => 'fa-check-square-o', 'label' => 'automatic_action_ux.close_task'),
+    array('action' => 'TaskCreation', 'icon' => 'fa-sticky-note-o', 'label' => 'automatic_action_ux.create_task'),
+    array('action' => 'TaskEmailNoActivity', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.send_email'),
+    array('action' => 'TaskEmail', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.send_email'),
+    array('action' => 'TaskMoveSwimlaneAssigned', 'icon' => 'fa-exchange', 'label' => 'automatic_action_ux.move_swimlane'),
     array('action' => 'TaskUpdateStartDateOnMoveToColumn', 'icon' => 'fa-play', 'label' => 'Start Date'),
     array('action' => 'TaskUpdateStartDate', 'icon' => 'fa-play', 'label' => 'Start Date'),
-    array('action' => 'AutoCreateSubtask', 'icon' => 'fa-tasks', 'label' => 'Create Subtask'),
-    array('action' => 'EmailGroup', 'icon' => 'fa-envelope-o', 'label' => 'Email Group'),
-    array('action' => 'EmailTaskHistory', 'icon' => 'fa-envelope-o', 'label' => 'Email History'),
-    array('action' => 'SendTaskAssignee', 'icon' => 'fa-envelope-o', 'label' => 'Email Assignee'),
-    array('action' => 'SubTaskEmailDue', 'icon' => 'fa-envelope-o', 'label' => 'Subtasks Due'),
-    array('action' => 'SubtaskTimerMoveTaskColumn', 'icon' => 'fa-clock-o', 'label' => 'Activate Timers'),
+    array('action' => 'AutoCreateSubtask', 'icon' => 'fa-tasks', 'label' => 'automatic_action_ux.create_subtask'),
+    array('action' => 'EmailGroup', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.email_group'),
+    array('action' => 'EmailTaskHistory', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.email_history'),
+    array('action' => 'SendTaskAssignee', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.email_assignee'),
+    array('action' => 'SubTaskEmailDue', 'icon' => 'fa-envelope-o', 'label' => 'automatic_action_ux.subtasks_due'),
+    array('action' => 'SubtaskTimerMoveTaskColumn', 'icon' => 'fa-clock-o', 'label' => 'automatic_action_ux.activate_timers'),
 );
 
 $resolvePresentation = static function ($eventName, $actionName, array $rules, array $fallback) {
@@ -67,22 +67,22 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
 <div id="ActionPageHeader" class="page-header action-page-header">
     <h2>
         <i class="fa fa-random aa-icon" aria-hidden="true"></i>
-        <?= t('Automatic Actions') ?>
+        <?= t('automatic_action_ux.automatic_actions') ?>
         <span class="aa-project-name">
             <i class="fa fa-folder" aria-hidden="true"></i>
             <strong><?= $this->text->e($project['name']) ?></strong>
         </span>
     </h2>
     <ul class="data-bar aa-summary-list">
-        <li class="action-page-count" title="<?= t('Actions for this project') ?>">
-            <span class="page-count-total"><?= t('Total') ?>:</span>
+        <li class="action-page-count" title="<?= t('automatic_action_ux.actions_for_project') ?>">
+            <span class="page-count-total"><?= t('automatic_action_ux.total') ?>:</span>
             <strong><?= count($actions) ?></strong>
         </li>
-        <li class="action-page-count" title="<?= t('User Triggered Actions') ?>">
+        <li class="action-page-count" title="<?= t('automatic_action_ux.user_triggered_actions') ?>">
             <i class="fa fa-user" aria-hidden="true"></i>
             <?= $userTriggerCount ?>
         </li>
-        <li class="action-page-count" title="<?= t('System Triggered Actions') ?>">
+        <li class="action-page-count" title="<?= t('automatic_action_ux.system_triggered_actions') ?>">
             <i class="fa fa-cog" aria-hidden="true"></i>
             <?= $systemTriggerCount ?>
         </li>
@@ -105,14 +105,14 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
     <table id="ActionTable" class="table-scrolling action-table">
         <thead>
             <tr class="action-table-row">
-                <th class="aa-column-number" scope="col"><?= t('N°') ?></th>
-                <th class="aa-column-trigger" scope="col"><?= t('Trigger') ?></th>
-                <th class="aa-column-relation" scope="col"><?= t('Relation') ?></th>
-                <th class="aa-column-event" scope="col"><?= t('Event Activity') ?></th>
-                <th class="aa-column-action" scope="col"><?= t('Action Title') ?></th>
-                <th class="aa-column-details" scope="col"><?= t('Action Details') ?></th>
+                <th class="aa-column-number" scope="col"><?= t('automatic_action_ux.number') ?></th>
+                <th class="aa-column-trigger" scope="col"><?= t('automatic_action_ux.trigger') ?></th>
+                <th class="aa-column-relation" scope="col"><?= t('automatic_action_ux.relation') ?></th>
+                <th class="aa-column-event" scope="col"><?= t('automatic_action_ux.event_activity') ?></th>
+                <th class="aa-column-action" scope="col"><?= t('automatic_action_ux.action_title') ?></th>
+                <th class="aa-column-details" scope="col"><?= t('automatic_action_ux.action_details') ?></th>
                 <th class="aa-column-id" scope="col">
-                    <abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= t('Action ID') ?></abbr>
+                    <abbr title="<?= t('automatic_action_ux.action_id_help') ?>"><?= t('automatic_action_ux.action_id') ?></abbr>
                 </th>
             </tr>
         </thead>
@@ -124,13 +124,13 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                     $action['event_name'],
                     $action['action_name'],
                     $eventPresentationRules,
-                    array('icon' => 'fa-bolt', 'label' => 'Event Name')
+                    array('icon' => 'fa-bolt', 'label' => 'automatic_action_ux.event')
                 );
                 $actionPresentation = $resolvePresentation(
                     $action['event_name'],
                     $action['action_name'],
                     $actionPresentationRules,
-                    array('icon' => 'fa-cogs', 'label' => 'Action')
+                    array('icon' => 'fa-cogs', 'label' => 'automatic_action_ux.action')
                 );
 
                 $relationIcon = 'fa-sticky-note';
@@ -154,7 +154,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                     <td class="action-trigger" rowspan="2">
                         <?php if ($this->text->contains($action['event_name'], 'task.cronjob.daily')): ?>
                             <i class="fa fa-fw fa-cog" aria-hidden="true"></i>
-                            <span class="sr-only"><?= t('System') ?></span>
+                            <span class="sr-only"><?= t('automatic_action_ux.system') ?></span>
                         <?php else: ?>
                             <i class="fa fa-fw fa-user" aria-hidden="true"></i>
                             <span class="sr-only"><?= t('User') ?></span>
@@ -188,20 +188,20 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                class="dropdown-menu dropdown-menu-link-icon action-dropdown"
                                role="button"
                                aria-haspopup="true"
-                               aria-label="<?= t('Automatic actions') ?>"
-                               title="<?= t('Automatic actions') ?>">
+                               aria-label="<?= t('automatic_action_ux.open_action_menu') ?>"
+                               title="<?= t('automatic_action_ux.open_action_menu') ?>">
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                                 <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                             <ul>
                                 <li>
-                                    <?= $this->modal->confirm('trash-o', t('Delete Automatic Action'), 'ActionController', 'confirm', array('project_id' => $project['id'], 'action_id' => $action['id'])) ?>
+                                    <?= $this->modal->confirm('trash-o', t('automatic_action_ux.delete_action'), 'ActionController', 'confirm', array('project_id' => $project['id'], 'action_id' => $action['id'])) ?>
                                 </li>
                             </ul>
                         </div>
                     </th>
                     <td class="action-id" rowspan="2">
-                        <abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= (int) $action['id'] ?></abbr>
+                        <abbr title="<?= t('automatic_action_ux.action_id_help') ?>"><?= (int) $action['id'] ?></abbr>
                     </td>
                 </tr>
                 <tr class="action-table-row">
@@ -213,7 +213,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                 <li class="action-event-name">
                                     <span class="action-event-title">
                                         <i class="fa fa-power-off" aria-hidden="true"></i>
-                                        <?= t('Action Trigger') ?>
+                                        <?= t('automatic_action_ux.action_trigger') ?>
                                     </span>
                                     <span class="action-event-value"><?= $this->text->in($action['event_name'], $available_events) ?></span>
                                     <span class="action-event-label"><?= t('Event Name') ?></span>
@@ -221,7 +221,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                 <li class="action-options-heading">
                                     <span class="action-options">
                                         <i class="fa fa-sliders" aria-hidden="true"></i>
-                                        <?= t('Selected Options') ?>
+                                        <?= t('automatic_action_ux.selected_options') ?>
                                     </span>
                                 </li>
                                 <?php foreach ($action['params'] as $paramName => $paramValue): ?>
@@ -233,7 +233,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                     <li class="action-options-value">
                                         <span class="action-option-name">
                                             <?php if ($paramName === 'send_to'): ?>
-                                                <?= t('Email Recipient(s)') ?>
+                                                <?= t('automatic_action_ux.email_recipients') ?>
                                             <?php elseif (is_array($parameterDefinition)): ?>
                                                 <?= $this->text->e(ucfirst(str_replace('_', ' ', $paramName))) ?>
                                             <?php else: ?>
@@ -271,7 +271,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                                     <?php if (empty($project['identifier'])): ?>
                                                         <span class="form-warning">
                                                             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                                                            <?= t('Project Identifier is not set') ?>
+                                                            <?= t('automatic_action_ux.project_identifier_missing') ?>
                                                         </span>
                                                     <?php endif ?>
                                                 <?php else: ?>
@@ -285,15 +285,15 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                                 <?php endif ?>
                                             <?php elseif ($paramName === 'check_box_no_duplicates'): ?>
                                                 <?php if ((string) $paramValue === '1'): ?>
-                                                    <span class="options-checked" aria-hidden="true">&#10004;</span> <?= t('Checked') ?>
+                                                    <span class="options-checked" aria-hidden="true">&#10004;</span> <?= t('automatic_action_ux.checked') ?>
                                                 <?php else: ?>
-                                                    <span class="options-unchecked" aria-hidden="true">&#10008;</span> <?= t('Not Checked') ?>
+                                                    <span class="options-unchecked" aria-hidden="true">&#10008;</span> <?= t('automatic_action_ux.not_checked') ?>
                                                 <?php endif ?>
                                             <?php elseif ($paramName === 'email_subject'): ?>
                                                 <?php if ($paramValue === null || $paramValue === ''): ?>
-                                                    <i class="not-set"><?= t('Not set') ?></i>
+                                                    <i class="not-set"><?= t('automatic_action_ux.not_set') ?></i>
                                                     <span class="form-help form-help-not-set">
-                                                        <abbr title="<?= t('Default Subject: Activity Report') ?>"><?= t('The default subject will be used') ?></abbr>
+                                                        <abbr title="<?= t('automatic_action_ux.default_subject') ?>"><?= t('automatic_action_ux.default_subject_used') ?></abbr>
                                                     </span>
                                                 <?php else: ?>
                                                     <?= $this->text->e($paramValue) ?>
@@ -301,13 +301,13 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                             <?php elseif ($paramName === 'send_to' && is_array($parameterDefinition)): ?>
                                                 <?php
                                                 $recipientLabels = array(
-                                                    'assignee' => 'Task Assignee',
-                                                    'creator' => 'Task Creator',
-                                                    'both' => 'Task Assignee & Task Creator',
-                                                    'assignee_project_email' => 'Task Assignee & Project Email Address',
-                                                    'creator_project_email' => 'Task Creator & Project Email Address',
-                                                    'project_email' => 'Project Email Address',
-                                                    'all' => 'Task Assignee, Task Creator & Project Email Address',
+                                                    'assignee' => 'automatic_action_ux.task_assignee',
+                                                    'creator' => 'automatic_action_ux.task_creator',
+                                                    'both' => 'automatic_action_ux.task_assignee_creator',
+                                                    'assignee_project_email' => 'automatic_action_ux.task_assignee_project_email',
+                                                    'creator_project_email' => 'automatic_action_ux.task_creator_project_email',
+                                                    'project_email' => 'automatic_action_ux.project_email',
+                                                    'all' => 'automatic_action_ux.all_recipients',
                                                 );
                                                 ?>
                                                 <?php if (isset($recipientLabels[$paramValue])): ?>
@@ -318,7 +318,7 @@ $resolvePresentation = static function ($eventName, $actionName, array $rules, a
                                                 <?php if ($requiresProjectEmail && empty($project['email'])): ?>
                                                     <span class="form-warning">
                                                         <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                                                        <?= t('Project Email Address is not set') ?>
+                                                        <?= t('automatic_action_ux.project_email_missing') ?>
                                                     </span>
                                                 <?php endif ?>
                                             <?php elseif (is_array($parameterDefinition)): ?>

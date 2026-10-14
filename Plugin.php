@@ -5,6 +5,11 @@ namespace Kanboard\Plugin\AutomaticActionUX;
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
 
+/**
+ * Register AutomaticActionUX templates, assets and isolated translations.
+ *
+ * Related test: tests/TranslationIsolationTest.php.
+ */
 class Plugin extends Base
 {
     public function initialize()
@@ -24,7 +29,13 @@ class Plugin extends Base
 
     public function onStartup()
     {
-        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__ . '/Locale');
+        // US English is the isolated fallback before the selected catalogue overlays it.
+        Translator::load('en_US', __DIR__ . '/Locale');
+
+        $currentLanguage = $this->languageModel->getCurrentLanguage();
+        if ($currentLanguage !== 'en_US') {
+            Translator::load($currentLanguage, __DIR__ . '/Locale');
+        }
     }
 
     public function getPluginName()
@@ -35,7 +46,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('This plugin gives the Automatic Action interface a complete makeover to make it more user friendly. Particularly useful for visual learners and non-English speaking users, this plugin adds a quick glance of Actions on the board avoiding careless drag-happy mistakes.');
+        return t('automatic_action_ux.description');
     }
 
     public function getPluginAuthor()
