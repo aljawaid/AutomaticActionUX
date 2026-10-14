@@ -1,5 +1,5 @@
 <?php
-// Related test: tests/ProjectHeaderPermissionTest.php.
+// Related tests: tests/ProjectHeaderPermissionTest.php and tests/ThemeContractTest.php.
 $canViewAutomaticActions = $this->user->hasProjectAccess('ActionController', 'index', $project['id']);
 ?>
 <?php if ($canViewAutomaticActions): ?>
@@ -16,7 +16,7 @@ $canViewAutomaticActions = $this->user->hasProjectAccess('ActionController', 'in
 
     $userTriggerCount = count($actions) - $systemTriggerCount;
     ?>
-    <li id="BoardActions" class="board-actions<?= $this->app->checkMenuSelection('ActionController') ? ' display-none' : '' ?>">
+    <li id="BoardActions" class="board-actions<?= $this->app->checkMenuSelection('ActionController') ? ' aa-is-hidden' : '' ?>">
         <a class="board-actions-summary"
            href="<?= $this->url->href('ActionController', 'index', array('project_id' => $project['id']), false, '', '') ?>"
            aria-label="<?= t('View all actions for this project') ?>">
