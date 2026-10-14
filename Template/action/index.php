@@ -10,7 +10,7 @@
             </g>
         </svg> &nbsp;<?= t('Automatic Actions') ?>
         <span class="float-right pp-grey">
-            <i class="fa fa-folder" aria-hidden="true"></i> <strong><?= $project['name'] ?></strong>
+            <i class="fa fa-folder" aria-hidden="true"></i> <strong><?= $this->text->e($project['name']) ?></strong>
         </span>
     </h2>
     <ul class="data-bar">
@@ -314,7 +314,7 @@
                     </th>
                     <!-- ACTION ID - NOT ACTION PARAMETER ID -->
                     <td class="action-id" rowspan="2">
-                        <abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= $action['id'] ?></abbr>
+                        <abbr title="<?= t('This ID is for the Action not the Action parameter') ?>"><?= (int) $action['id'] ?></abbr>
                     </td>
                 </tr>
                 <tr class="action-table-row">
@@ -352,7 +352,14 @@
                                         <?php elseif ($this->text->contains($param_name, 'project_id')): ?>
                                             <?= $this->text->in($param_value, $projects_list) ?>
                                         <?php elseif ($this->text->contains($param_name, 'color_id')): ?>
-                                            <span class="action-color-value action-color-<?= (strtolower(str_replace(' ', '_', $this->text->in($param_value, $colors_list)))) ?>">
+                                            <?php
+                                                $colorClass = strtolower((string) $param_value);
+                                                $colorClass = trim((string) preg_replace('/[^a-z0-9_-]+/', '-', $colorClass), '-');
+                                                if ($colorClass === '') {
+                                                    $colorClass = 'default';
+                                                }
+                                            ?>
+                                            <span class="action-color-value action-color-<?= $this->text->e($colorClass) ?>">
                                                 <?= $this->text->in($param_value, $colors_list) ?>
                                             </span>
                                         <?php elseif ($this->text->contains($param_name, 'category_id')): ?>
