@@ -55,6 +55,15 @@ jobs:
             php -l "$file"
           done < <(find plugin -type f -name '*.php' -print0)
 
+      - name: Run plugin contract tests
+        shell: bash
+        env:
+          KANBOARD_ROOT: ${{ github.workspace }}/kanboard
+        run: |
+          while IFS= read -r -d '' test_file; do
+            php "$test_file"
+          done < <(find plugin/tests -type f -name '*.php' -print0)
+
       - name: Install Kanboard dependencies
         run: composer install --working-dir=kanboard --no-dev --no-interaction --prefer-dist --no-progress --optimize-autoloader
 

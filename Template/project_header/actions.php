@@ -1,12 +1,16 @@
 <?php
+// Related test: tests/ProjectHeaderPermissionTest.php.
+$canViewAutomaticActions = $this->user->hasProjectAccess('ActionController', 'index', $project['id']);
+?>
+<?php if ($canViewAutomaticActions): ?>
+<?php
+// Query action metadata only after Kanboard has authorised access to the action list.
 $actions = $this->model->actionModel->getAllByProject($project['id']);
 // phpcs:disable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore -- code must be kept intact
 ?>
 <li id="BoardActions" class="board-actions <?php if ($this->app->checkMenuSelection('ActionController')): ?> display-none <?php endif ?>">
     <?php // phpcs:enable ?>
-    <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
-        <a href="<?= $this->url->href('ActionController', 'index', array('project_id' => $project['id']), false, '', '') ?>">
-    <?php endif ?>
+    <a href="<?= $this->url->href('ActionController', 'index', array('project_id' => $project['id']), false, '', '') ?>">
     <div class="board-actions-title">
         <svg version="1.1" class="aa-icon" width="18px" height="18px" fill="currentColor" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g stroke-width="0"></g>
@@ -20,11 +24,7 @@ $actions = $this->model->actionModel->getAllByProject($project['id']);
     </div>
     <div class="board-actions-counts">
         <div class="action-page-count" title="<?= t('Actions for this project')?>">
-            <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
-                <?= $this->url->link(count($actions), 'ActionController', 'index', array('project_id' => $project['id']), '', 'board-action-link', t('View all actions for this project')) ?>
-            <?php else: ?>
-                <?= count($actions) ?>
-            <?php endif ?>
+            <?= $this->url->link(count($actions), 'ActionController', 'index', array('project_id' => $project['id']), '', 'board-action-link', t('View all actions for this project')) ?>
         </div>
 
         <?php
@@ -56,7 +56,6 @@ $actions = $this->model->actionModel->getAllByProject($project['id']);
             <?php endif ?>
         </div>
     </div>
-    <?php if ($this->user->hasProjectAccess('ActionController', 'index', $project['id'])): ?>
-        </a>
-    <?php endif ?>
+    </a>
 </li>
+<?php endif ?>
