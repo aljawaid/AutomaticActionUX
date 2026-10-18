@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.0.0
+
+_(most recent changes are listed on top):_
+- SECURITY FIX: Restrict automatic-action summaries to users who can access the project
+- SECURITY FIX: Escape project names and constrain generated action attributes before rendering them
+- FIX: Require Kanboard 1.2.54 and refresh the automatic-action template for its current interface
+- FIX: Support PHP 8.2, 8.3, 8.4 and 8.5 in the compatibility workflow
+- FIX: Make automatic-action controls theme-aware, responsive and scoped to the plugin interface
+- FIX: Isolate and complete the US English, British English, French and German translation catalogues
+- FIX: Add focused contracts for access, template compatibility, output safety, themes and translations
+
+
 ## v2.6
 
 _(most recent changes are listed on top):_
