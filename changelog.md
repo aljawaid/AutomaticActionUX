@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v3.0.2
+
+_(most recent changes are listed on top):_
+- FIX: Package the plugin root as the first ZIP entry so Kanboard can update an existing installation
+
+
 ## v3.0.1
 
 _(most recent changes are listed on top):_
