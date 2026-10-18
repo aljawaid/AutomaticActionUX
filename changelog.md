@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v3.0.1
+
+_(most recent changes are listed on top):_
+- FIX: Keep Light and Dark theme text and action controls above WCAG AA contrast thresholds
+- FIX: Contain the automatic-action table's horizontal scrolling within narrow layouts
+
+
 ## v3.0.0
 
 _(most recent changes are listed on top):_

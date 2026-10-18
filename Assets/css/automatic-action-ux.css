@@ -25,7 +25,7 @@
 }
 
 #ActionPageHeader .aa-project-name {
-    color: var(--color-light);
+    color: var(--link-color-primary);
     font-size: 0.75em;
     margin-left: auto;
 }
@@ -65,6 +65,7 @@
 
 #ActionPageHeader .add-action-btn,
 #ActionPageHeader .import-action-btn {
+    background: var(--table-header-background-color);
     border: 1px solid var(--button-default-border-color);
     border-radius: 3px;
     display: inline-block;
@@ -72,18 +73,18 @@
 }
 
 #ActionPageHeader .add-action-btn {
-    background: var(--button-primary-background-color);
-    border-color: var(--button-primary-border-color);
+    font-weight: 600;
 }
 
-#ActionPageHeader .add-action-btn a {
-    color: var(--button-primary-color);
+#ActionPageHeader .add-action-btn a,
+#ActionPageHeader .import-action-btn a {
+    color: var(--link-color-primary);
 }
 
 #ActionPageHeader .add-action-btn:focus-within,
 #ActionPageHeader .add-action-btn:hover {
-    background: var(--button-primary-background-color-focus);
-    border-color: var(--button-primary-border-color-focus);
+    background: var(--button-default-background-color-focus);
+    border-color: var(--button-default-border-color-focus);
 }
 
 #ActionPageHeader .import-action-btn:focus-within,
@@ -130,8 +131,8 @@
 }
 
 #ActionTable .action-name-cell {
-    background: var(--alert-background-color-info);
-    color: var(--alert-color-info);
+    background: var(--table-header-background-color);
+    color: var(--color-primary);
     padding-left: 0.5rem;
 }
 
@@ -152,13 +153,13 @@
 
 #ActionTable .action-trigger,
 #ActionTable .action-relation {
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 2em;
 }
 
 #ActionTable .action-activity,
 #ActionTable .action-action {
-    color: var(--color-light);
+    color: var(--color-primary);
 }
 
 #ActionTable .action-activity-icon,
@@ -206,7 +207,7 @@
 }
 
 #ActionTable .action-event-label {
-    color: var(--color-light);
+    color: var(--color-primary);
     margin-left: auto;
 }
 
@@ -252,7 +253,7 @@
 }
 
 #ActionTable .not-set {
-    color: var(--color-light);
+    color: var(--color-primary);
     font-weight: normal;
 }
 
@@ -309,8 +310,11 @@
 
     #ActionTable.table-scrolling {
         display: block;
+        max-width: 100%;
+        min-width: 0;
         overflow-x: auto;
         white-space: normal;
+        width: 100%;
     }
 
     #BoardActions .board-actions-summary {

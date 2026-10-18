@@ -27,7 +27,7 @@ foreach (array('.float-right', '.text-center', '.display-none', '.bl-0', '.not-s
     }
 }
 
-foreach (array('--color-primary', '--color-light', '--link-color-primary', '--table-border-color', '--table-header-background-color', '--button-primary-background-color', '--form-error-color') as $variable) {
+foreach (array('--color-primary', '--link-color-primary', '--table-border-color', '--table-header-background-color', '--button-default-background-color-focus', '--form-error-color') as $variable) {
     if (strpos($css, 'var(' . $variable . ')') === false) {
         $failures[] = 'Missing Kanboard theme variable: ' . $variable;
     }
@@ -35,6 +35,12 @@ foreach (array('--color-primary', '--color-light', '--link-color-primary', '--ta
 
 if (strpos($css, '@media (max-width: 768px)') === false || strpos($css, '#ActionTable.table-scrolling') === false) {
     $failures[] = 'Responsive action-table styling is missing.';
+}
+if (strpos($css, 'min-width: 0;') === false || strpos($css, 'max-width: 100%;') === false || strpos($css, 'width: 100%;') === false) {
+    $failures[] = 'The responsive action table must contain horizontal scrolling within the page.';
+}
+if (strpos($css, '#ActionTable .action-name-cell') === false || strpos($css, 'background: var(--table-header-background-color);') === false) {
+    $failures[] = 'The action name must use theme-aware table colours.';
 }
 
 if (strpos($css, '#BoardActions.aa-is-hidden') === false || strpos($projectTemplate, ' aa-is-hidden') === false) {
