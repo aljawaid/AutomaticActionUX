@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v3.0.3
+
+_(most recent changes are listed on top):_
+- FIX: Improve theme contrast, responsive action table layout and update-package compatibility
+
+
 ## v3.0.2
 
 _(most recent changes are listed on top):_
